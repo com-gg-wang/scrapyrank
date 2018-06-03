@@ -11,8 +11,8 @@ from scrapy.spiders import CrawlSpider, Rule
 
 class EntreySpider(CrawlSpider):
     name = 'entrey'
-    # allowed_domains = ['anjuke.com']
-    start_urls = ['https://dalian.anjuke.com/sale/']
+    # allowed_domains = ['ershoufang_58.com']
+    start_urls = ['https://dalian.ershoufang_58.com/sale/']
 
     rules = (
         Rule(LinkExtractor(allow=r'^[https://].*', restrict_xpaths=r'//div[@class="items"]//span[@class="elems-l"]/a')),

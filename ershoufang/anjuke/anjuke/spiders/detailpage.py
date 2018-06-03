@@ -6,8 +6,8 @@ from scrapy.spiders import CrawlSpider, Rule
 
 class DetailpageSpider(CrawlSpider):
     name = 'detailpage'
-    allowed_domains = ['anjuke.com']
-    start_urls = ['http://anjuke.com/']
+    allowed_domains = ['ershoufang_58.com']
+    start_urls = ['http://ershoufang_58.com/']
 
     rules = (
         Rule(LinkExtractor(allow=r'Items/'), callback='parse_item', follow=True),

@@ -8,7 +8,7 @@ import sys
 
 path = dirname(dirname(os.path.abspath(os.path.dirname(__file__))))
 sys.path.append(path)
-# Scrapy settings for anjuke project
+# Scrapy settings for ershoufang_58 project
 #
 # For simplicity, this file contains only settings considered important or
 # commonly used. You can find more settings consulting the documentation:
@@ -17,14 +17,14 @@ sys.path.append(path)
 #     https://doc.scrapy.org/en/latest/topics/downloader-middleware.html
 #     https://doc.scrapy.org/en/latest/topics/spider-middleware.html
 
-BOT_NAME = 'anjuke'
+BOT_NAME = 'ershoufang_58'
 
-SPIDER_MODULES = ['anjuke.spiders']
-NEWSPIDER_MODULE = 'anjuke.spiders'
+SPIDER_MODULES = ['ershoufang_58.spiders']
+NEWSPIDER_MODULE = 'ershoufang_58.spiders'
 
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
-#USER_AGENT = 'anjuke (+http://www.yourdomain.com)'
+#USER_AGENT = 'ershoufang_58 (+http://www.yourdomain.com)'
 
 # Obey robots.txt rules
 ROBOTSTXT_OBEY = False
@@ -35,7 +35,7 @@ ROBOTSTXT_OBEY = False
 # Configure a delay for requests for the same website (default: 0)
 # See https://doc.scrapy.org/en/latest/topics/settings.html#download-delay
 # See also autothrottle settings and docs
-DOWNLOAD_DELAY = 5
+DOWNLOAD_DELAY = 4
 # The download delay setting will honor only one of:
 #CONCURRENT_REQUESTS_PER_DOMAIN = 16
 #CONCURRENT_REQUESTS_PER_IP = 16
@@ -56,13 +56,13 @@ DOWNLOAD_DELAY = 5
 # Enable or disable spider middlewares
 # See https://doc.scrapy.org/en/latest/topics/spider-middleware.html
 #SPIDER_MIDDLEWARES = {
-#    'anjuke.middlewares.AnjukeSpiderMiddleware': 543,
+#    'ershoufang_58.middlewares.ershoufang_58SpiderMiddleware': 543,
 #}
 
 # Enable or disable downloader middlewares
 # See https://doc.scrapy.org/en/latest/topics/downloader-middleware.html
 DOWNLOADER_MIDDLEWARES = {
-   'anjuke.middlewares.CustomUserAgentMiddleware': 543,
+   'ershoufang_58.middlewares.CustomUserAgentMiddleware': 543,
 }
 
 # Enable or disable extensions
@@ -74,7 +74,7 @@ DOWNLOADER_MIDDLEWARES = {
 # Configure item pipelines
 # See https://doc.scrapy.org/en/latest/topics/item-pipeline.html
 ITEM_PIPELINES = {
-   'anjuke.pipelines.AnjukePipeline': 300,
+   'ershoufang_58.pipelines.ershoufang_58Pipeline': 300,
 }
 
 # Enable and configure the AutoThrottle extension (disabled by default)
