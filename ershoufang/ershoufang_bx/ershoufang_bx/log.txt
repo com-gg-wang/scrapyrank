@@ -1,0 +1,627 @@
+2018-06-03 22:05:18 [scrapy.utils.log] INFO: Scrapy 1.5.0 started (bot: ershoufang_bx)
+2018-06-03 22:05:18 [scrapy.utils.log] INFO: Versions: lxml 4.1.1.0, libxml2 2.9.7, cssselect 1.0.3, parsel 1.4.0, w3lib 1.19.0, Twisted 17.9.0, Python 3.6.4 (default, Mar  9 2018, 23:15:03) - [GCC 4.2.1 Compatible Apple LLVM 9.0.0 (clang-900.0.39.2)], pyOpenSSL 17.5.0 (OpenSSL 1.1.0g  2 Nov 2017), cryptography 2.1.4, Platform Darwin-17.4.0-x86_64-i386-64bit
+2018-06-03 22:05:18 [scrapy.crawler] INFO: Overridden settings: {'BOT_NAME': 'ershoufang_bx', 'DOWNLOAD_DELAY': 2, 'LOG_FILE': 'log.txt', 'NEWSPIDER_MODULE': 'ershoufang_bx.spiders', 'SPIDER_MODULES': ['ershoufang_bx.spiders']}
+2018-06-03 22:05:18 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.logstats.LogStats']
+2018-06-03 22:05:19 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'ershoufang_bx.middlewares.CustomUserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2018-06-03 22:05:19 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2018-06-03 22:05:19 [scrapy.middleware] INFO: Enabled item pipelines:
+['ershoufang_bx.pipelines.ershoufang_bxPipeline']
+2018-06-03 22:05:19 [scrapy.core.engine] INFO: Spider opened
+2018-06-03 22:05:19 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2018-06-03 22:05:19 [scrapy.extensions.telnet] DEBUG: Telnet console listening on 127.0.0.1:6024
+2018-06-03 22:05:19 [scrapy.log] INFO: b'Mozilla/5.0 (X11; U; Linux; en-US) AppleWebKit/527+ (KHTML, like Gecko, Safari/419.3) Arora/0.6'
+2018-06-03 22:05:19 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET http://dalian.baixing.com/ershoufang/?afo=9LI> from <GET http://dalian.baixing.com/ershoufang/>
+2018-06-03 22:05:19 [scrapy.log] INFO: b'Mozilla/5.0 (Windows; U; MSIE 9.0; Windows NT 9.0; en-US)'
+2018-06-03 22:05:22 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://dalian.baixing.com/ershoufang/?afo=9LI> (referer: None)
+2018-06-03 22:05:22 [scrapy.log] INFO: b'Mozilla/5.0 (Windows; U; Windows NT 5.1; zh-CN; rv:1.9) Gecko/20080705 Firefox/3.0 Kapiko/3.0'
+2018-06-03 22:05:22 [scrapy.log] INFO: b'Mozilla/5.0 (Windows; U; Windows NT 5.1; zh-CN; rv:1.9) Gecko/20080705 Firefox/3.0 Kapiko/3.0'
+2018-06-03 22:05:22 [scrapy.log] INFO: b'Mozilla/4.0 (compatible; MSIE 7.0b; Windows NT 5.2; .NET CLR 1.1.4322; .NET CLR 2.0.50727; InfoPath.2; .NET CLR 3.0.04506.30)'
+2018-06-03 22:05:22 [scrapy.log] INFO: b'Mozilla/5.0 (Windows; U; MSIE 9.0; Windows NT 9.0; en-US)'
+2018-06-03 22:05:22 [scrapy.log] INFO: b'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/535.11 (KHTML, like Gecko) Chrome/17.0.963.56 Safari/535.11'
+2018-06-03 22:05:22 [scrapy.log] INFO: b'Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.8.1.2pre) Gecko/20070215 K-Ninja/2.1.1'
+2018-06-03 22:05:22 [scrapy.log] INFO: b'Mozilla/5.0 (Windows; U; Windows NT 5.1; zh-CN) AppleWebKit/523.15 (KHTML, like Gecko, Safari/419.3) Arora/0.3 (Change: 287 c9dfb30)'
+2018-06-03 22:05:22 [scrapy.log] INFO: b'Mozilla/5.0 (Windows; U; MSIE 9.0; Windows NT 9.0; en-US)'
+2018-06-03 22:05:22 [scrapy.log] INFO: b'Mozilla/5.0 (Windows; U; Windows NT 5.1; zh-CN) AppleWebKit/523.15 (KHTML, like Gecko, Safari/419.3) Arora/0.3 (Change: 287 c9dfb30)'
+2018-06-03 22:05:22 [scrapy.log] INFO: b'Opera/9.80 (Macintosh; Intel Mac OS X 10.6.8; U; fr) Presto/2.9.168 Version/11.52'
+2018-06-03 22:05:22 [scrapy.log] INFO: b'Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; Win64; x64; Trident/5.0; .NET CLR 3.5.30729; .NET CLR 3.0.30729; .NET CLR 2.0.50727; Media Center PC 6.0)'
+2018-06-03 22:05:22 [scrapy.log] INFO: b'Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.9.0.8) Gecko Fedora/1.9.0.8-1.fc10 Kazehakase/0.5.6'
+2018-06-03 22:05:22 [scrapy.log] INFO: b'Mozilla/4.0 (compatible; MSIE 7.0; AOL 9.5; AOLBuild 4337.35; Windows NT 5.1; .NET CLR 1.1.4322; .NET CLR 2.0.50727)'
+2018-06-03 22:05:22 [scrapy.log] INFO: b'Mozilla/5.0 (compatible; MSIE 8.0; Windows NT 6.0; Trident/4.0; WOW64; Trident/4.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; .NET CLR 1.0.3705; .NET CLR 1.1.4322)'
+2018-06-03 22:05:22 [scrapy.log] INFO: b'Mozilla/4.0 (compatible; MSIE 7.0; AOL 9.5; AOLBuild 4337.35; Windows NT 5.1; .NET CLR 1.1.4322; .NET CLR 2.0.50727)'
+2018-06-03 22:05:22 [scrapy.log] INFO: b'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.0; Acoo Browser; SLCC1; .NET CLR 2.0.50727; Media Center PC 5.0; .NET CLR 3.0.04506)'
+2018-06-03 22:05:23 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET http://dalian.baixing.com/ershoufang/m6363/?afo=G34> from <GET http://dalian.baixing.com/ershoufang/m6363/>
+2018-06-03 22:05:23 [scrapy.log] INFO: b'Mozilla/5.0 (X11; U; Linux; en-US) AppleWebKit/527+ (KHTML, like Gecko, Safari/419.3) Arora/0.6'
+2018-06-03 22:05:26 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://dalian.baixing.com/ershoufang/a1410469980.html?from=urgent> (referer: http://dalian.baixing.com/ershoufang/?afo=9LI)
+2018-06-03 22:05:26 [scrapy.log] INFO: b'Mozilla/5.0 (compatible; MSIE 8.0; Windows NT 6.0; Trident/4.0; WOW64; Trident/4.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; .NET CLR 1.0.3705; .NET CLR 1.1.4322)'
+2018-06-03 22:05:27 [py.warnings] WARNING: /usr/local/lib/python3.6/site-packages/bs4/__init__.py:181: UserWarning: No parser was explicitly specified, so I'm using the best available HTML parser for this system ("lxml"). This usually isn't a problem, but if you run this code on another system, or in a different virtual environment, it may use a different parser and behave differently.
+
+The code that caused this warning is on line 11 of the file /usr/local/bin/scrapy. To get rid of this warning, change code that looks like this:
+
+ BeautifulSoup(YOUR_MARKUP})
+
+to this:
+
+ BeautifulSoup(YOUR_MARKUP, "lxml")
+
+  markup_type=markup_type))
+
+2018-06-03 22:05:27 [scrapy.core.scraper] DEBUG: Scraped from <200 http://dalian.baixing.com/ershoufang/a1410469980.html?from=urgent>
+{'raw': <200 http://dalian.baixing.com/ershoufang/a1410469980.html?from=urgent>}
+2018-06-03 22:05:30 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://dalian.baixing.com/ershoufang/?page=2> (referer: http://dalian.baixing.com/ershoufang/?afo=9LI)
+2018-06-03 22:05:30 [scrapy.log] INFO: b'Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.8.1.2pre) Gecko/20070215 K-Ninja/2.1.1'
+2018-06-03 22:05:32 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET http://dalian.baixing.com/ershoufang/m181337/?afo=QjV> from <GET http://dalian.baixing.com/ershoufang/m181337/>
+2018-06-03 22:05:32 [scrapy.log] INFO: b'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; AcooBrowser; .NET CLR 1.1.4322; .NET CLR 2.0.50727)'
+2018-06-03 22:05:34 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET http://dalian.baixing.com/ershoufang/m6354/?afo=SsI> from <GET http://dalian.baixing.com/ershoufang/m6354/>
+2018-06-03 22:05:34 [scrapy.log] INFO: b'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.0; Acoo Browser; SLCC1; .NET CLR 2.0.50727; Media Center PC 5.0; .NET CLR 3.0.04506)'
+2018-06-03 22:05:35 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET http://dalian.baixing.com/ershoufang/m177332/?afo=VWN> from <GET http://dalian.baixing.com/ershoufang/m177332/>
+2018-06-03 22:05:35 [scrapy.log] INFO: b'Mozilla/5.0 (X11; U; Linux; en-US) AppleWebKit/527+ (KHTML, like Gecko, Safari/419.3) Arora/0.6'
+2018-06-03 22:05:37 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET http://dalian.baixing.com/ershoufang/m6353/?afo=KIC> from <GET http://dalian.baixing.com/ershoufang/m6353/>
+2018-06-03 22:05:37 [scrapy.log] INFO: b'Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.9.0.8) Gecko Fedora/1.9.0.8-1.fc10 Kazehakase/0.5.6'
+2018-06-03 22:05:39 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET http://dalian.baixing.com/ershoufang/m6359/?afo=xbt> from <GET http://dalian.baixing.com/ershoufang/m6359/>
+2018-06-03 22:05:39 [scrapy.log] INFO: b'Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.9.0.8) Gecko Fedora/1.9.0.8-1.fc10 Kazehakase/0.5.6'
+2018-06-03 22:05:42 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET http://dalian.baixing.com/ershoufang/m6352/?afo=sBi> from <GET http://dalian.baixing.com/ershoufang/m6352/>
+2018-06-03 22:05:42 [scrapy.log] INFO: b'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; AcooBrowser; .NET CLR 1.1.4322; .NET CLR 2.0.50727)'
+2018-06-03 22:05:45 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET http://dalian.baixing.com/ershoufang/m6355/?afo=FIa> from <GET http://dalian.baixing.com/ershoufang/m6355/>
+2018-06-03 22:05:45 [scrapy.log] INFO: b'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/535.11 (KHTML, like Gecko) Chrome/17.0.963.56 Safari/535.11'
+2018-06-03 22:05:46 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET http://dalian.baixing.com/ershoufang/m6362/?afo=SG2> from <GET http://dalian.baixing.com/ershoufang/m6362/>
+2018-06-03 22:05:46 [scrapy.log] INFO: b'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/535.11 (KHTML, like Gecko) Chrome/17.0.963.56 Safari/535.11'
+2018-06-03 22:05:49 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET http://dalian.baixing.com/ershoufang/m6356/?afo=A4t> from <GET http://dalian.baixing.com/ershoufang/m6356/>
+2018-06-03 22:05:49 [scrapy.log] INFO: b'Mozilla/4.0 (compatible; MSIE 7.0; AOL 9.5; AOLBuild 4337.35; Windows NT 5.1; .NET CLR 1.1.4322; .NET CLR 2.0.50727)'
+2018-06-03 22:05:50 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET http://dalian.baixing.com/ershoufang/m6357/?afo=dsM> from <GET http://dalian.baixing.com/ershoufang/m6357/>
+2018-06-03 22:05:50 [scrapy.log] INFO: b'Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; Win64; x64; Trident/5.0; .NET CLR 3.5.30729; .NET CLR 3.0.30729; .NET CLR 2.0.50727; Media Center PC 6.0)'
+2018-06-03 22:05:52 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET http://dalian.baixing.com/ershoufang/m6358/?afo=mA3> from <GET http://dalian.baixing.com/ershoufang/m6358/>
+2018-06-03 22:05:52 [scrapy.log] INFO: b'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; AcooBrowser; .NET CLR 1.1.4322; .NET CLR 2.0.50727)'
+2018-06-03 22:05:55 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET http://dalian.baixing.com/ershoufang/m6361/?afo=cQF> from <GET http://dalian.baixing.com/ershoufang/m6361/>
+2018-06-03 22:05:55 [scrapy.log] INFO: b'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_3) AppleWebKit/535.20 (KHTML, like Gecko) Chrome/19.0.1036.7 Safari/535.20'
+2018-06-03 22:05:57 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET http://dalian.baixing.com/ershoufang/m6366/?afo=uwD> from <GET http://dalian.baixing.com/ershoufang/m6366/>
+2018-06-03 22:05:57 [scrapy.log] INFO: b'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_3) AppleWebKit/535.20 (KHTML, like Gecko) Chrome/19.0.1036.7 Safari/535.20'
+2018-06-03 22:06:00 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://dalian.baixing.com/ershoufang/m6363/?afo=G34> (referer: http://dalian.baixing.com/ershoufang/?afo=9LI)
+2018-06-03 22:06:00 [scrapy.log] INFO: b'Mozilla/4.0 (compatible; MSIE 7.0b; Windows NT 5.2; .NET CLR 1.1.4322; .NET CLR 2.0.50727; InfoPath.2; .NET CLR 3.0.04506.30)'
+2018-06-03 22:06:00 [scrapy.dupefilters] DEBUG: Filtered duplicate request: <GET http://dalian.baixing.com/ershoufang/m6364/> - no more duplicates will be shown (see DUPEFILTER_DEBUG to show all duplicates)
+2018-06-03 22:06:02 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://dalian.baixing.com/ershoufang/a1391889053.html?from=vip> (referer: http://dalian.baixing.com/ershoufang/?afo=9LI)
+2018-06-03 22:06:02 [scrapy.log] INFO: b'Mozilla/5.0 (X11; U; Linux; en-US) AppleWebKit/527+ (KHTML, like Gecko, Safari/419.3) Arora/0.6'
+2018-06-03 22:06:02 [scrapy.core.scraper] DEBUG: Scraped from <200 http://dalian.baixing.com/ershoufang/a1391889053.html?from=vip>
+{'raw': <200 http://dalian.baixing.com/ershoufang/a1391889053.html?from=vip>}
+2018-06-03 22:06:04 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://dalian.baixing.com/ershoufang/a1311490271.html?from=vip> (referer: http://dalian.baixing.com/ershoufang/?afo=9LI)
+2018-06-03 22:06:04 [scrapy.log] INFO: b'Mozilla/5.0 (Windows; U; Windows NT 5.1; zh-CN; rv:1.9) Gecko/20080705 Firefox/3.0 Kapiko/3.0'
+2018-06-03 22:06:04 [scrapy.core.scraper] DEBUG: Scraped from <200 http://dalian.baixing.com/ershoufang/a1311490271.html?from=vip>
+{'raw': <200 http://dalian.baixing.com/ershoufang/a1311490271.html?from=vip>}
+2018-06-03 22:06:07 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://dalian.baixing.com/ershoufang/m181337/?afo=QjV> (referer: http://dalian.baixing.com/ershoufang/?afo=9LI)
+2018-06-03 22:06:07 [scrapy.log] INFO: b'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/535.11 (KHTML, like Gecko) Chrome/17.0.963.56 Safari/535.11'
+2018-06-03 22:06:08 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://dalian.baixing.com/ershoufang/m6354/?afo=SsI> (referer: http://dalian.baixing.com/ershoufang/?afo=9LI)
+2018-06-03 22:06:08 [scrapy.log] INFO: b'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/535.11 (KHTML, like Gecko) Chrome/17.0.963.56 Safari/535.11'
+2018-06-03 22:06:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://dalian.baixing.com/ershoufang/m177332/?afo=VWN> (referer: http://dalian.baixing.com/ershoufang/?afo=9LI)
+2018-06-03 22:06:11 [scrapy.log] INFO: b'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.0; Acoo Browser; SLCC1; .NET CLR 2.0.50727; Media Center PC 5.0; .NET CLR 3.0.04506)'
+2018-06-03 22:06:13 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://dalian.baixing.com/ershoufang/m6353/?afo=KIC> (referer: http://dalian.baixing.com/ershoufang/?afo=9LI)
+2018-06-03 22:06:13 [scrapy.log] INFO: b'Mozilla/5.0 (X11; U; Linux; en-US) AppleWebKit/527+ (KHTML, like Gecko, Safari/419.3) Arora/0.6'
+2018-06-03 22:06:15 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://dalian.baixing.com/ershoufang/m6359/?afo=xbt> (referer: http://dalian.baixing.com/ershoufang/?afo=9LI)
+2018-06-03 22:06:15 [scrapy.log] INFO: b'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/535.11 (KHTML, like Gecko) Chrome/17.0.963.56 Safari/535.11'
+2018-06-03 22:06:17 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://dalian.baixing.com/ershoufang/m6352/?afo=sBi> (referer: http://dalian.baixing.com/ershoufang/?afo=9LI)
+2018-06-03 22:06:17 [scrapy.log] INFO: b'Mozilla/5.0 (Windows; U; MSIE 9.0; Windows NT 9.0; en-US)'
+2018-06-03 22:06:19 [scrapy.extensions.logstats] INFO: Crawled 12 pages (at 12 pages/min), scraped 3 items (at 3 items/min)
+2018-06-03 22:06:19 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://dalian.baixing.com/ershoufang/m6355/?afo=FIa> (referer: http://dalian.baixing.com/ershoufang/?afo=9LI)
+2018-06-03 22:06:19 [scrapy.log] INFO: b'Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; Win64; x64; Trident/5.0; .NET CLR 3.5.30729; .NET CLR 3.0.30729; .NET CLR 2.0.50727; Media Center PC 6.0)'
+2018-06-03 22:06:22 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://dalian.baixing.com/ershoufang/m6362/?afo=SG2> (referer: http://dalian.baixing.com/ershoufang/?afo=9LI)
+2018-06-03 22:06:22 [scrapy.log] INFO: b'Mozilla/5.0 (Windows; U; Windows NT 5.1; zh-CN; rv:1.9) Gecko/20080705 Firefox/3.0 Kapiko/3.0'
+2018-06-03 22:06:23 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://dalian.baixing.com/ershoufang/m6356/?afo=A4t> (referer: http://dalian.baixing.com/ershoufang/?afo=9LI)
+2018-06-03 22:06:23 [scrapy.log] INFO: b'Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; Win64; x64; Trident/5.0; .NET CLR 3.5.30729; .NET CLR 3.0.30729; .NET CLR 2.0.50727; Media Center PC 6.0)'
+2018-06-03 22:06:26 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://dalian.baixing.com/ershoufang/m6357/?afo=dsM> (referer: http://dalian.baixing.com/ershoufang/?afo=9LI)
+2018-06-03 22:06:26 [scrapy.log] INFO: b'Mozilla/5.0 (Windows; U; Windows NT 5.1; zh-CN) AppleWebKit/523.15 (KHTML, like Gecko, Safari/419.3) Arora/0.3 (Change: 287 c9dfb30)'
+2018-06-03 22:06:28 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://dalian.baixing.com/ershoufang/m6358/?afo=mA3> (referer: http://dalian.baixing.com/ershoufang/?afo=9LI)
+2018-06-03 22:06:28 [scrapy.log] INFO: b'Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.9.0.8) Gecko Fedora/1.9.0.8-1.fc10 Kazehakase/0.5.6'
+2018-06-03 22:06:30 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://dalian.baixing.com/ershoufang/m6361/?afo=cQF> (referer: http://dalian.baixing.com/ershoufang/?afo=9LI)
+2018-06-03 22:06:30 [scrapy.log] INFO: b'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.0; Acoo Browser; SLCC1; .NET CLR 2.0.50727; Media Center PC 5.0; .NET CLR 3.0.04506)'
+2018-06-03 22:06:33 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://dalian.baixing.com/ershoufang/m6366/?afo=uwD> (referer: http://dalian.baixing.com/ershoufang/?afo=9LI)
+2018-06-03 22:06:33 [scrapy.log] INFO: b'Mozilla/5.0 (X11; Linux i686; U;) Gecko/20070322 Kazehakase/0.4.5'
+2018-06-03 22:06:35 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://dalian.baixing.com/ershoufang/a1364963978.html> (referer: http://dalian.baixing.com/ershoufang/?page=2)
+2018-06-03 22:06:35 [scrapy.log] INFO: b'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/535.11 (KHTML, like Gecko) Chrome/17.0.963.56 Safari/535.11'
+2018-06-03 22:06:35 [scrapy.core.scraper] DEBUG: Scraped from <200 http://dalian.baixing.com/ershoufang/a1364963978.html>
+{'raw': <200 http://dalian.baixing.com/ershoufang/a1364963978.html>}
+2018-06-03 22:06:38 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://dalian.baixing.com/ershoufang/a1262523766.html?from=cpm> (referer: http://dalian.baixing.com/ershoufang/m6363/?afo=G34)
+2018-06-03 22:06:38 [scrapy.log] INFO: b'Mozilla/5.0 (Windows; U; Windows NT 5.1; zh-CN) AppleWebKit/523.15 (KHTML, like Gecko, Safari/419.3) Arora/0.3 (Change: 287 c9dfb30)'
+2018-06-03 22:06:38 [scrapy.core.scraper] DEBUG: Scraped from <200 http://dalian.baixing.com/ershoufang/a1262523766.html?from=cpm>
+{'raw': <200 http://dalian.baixing.com/ershoufang/a1262523766.html?from=cpm>}
+2018-06-03 22:06:41 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://dalian.baixing.com/ershoufang/a1412267691.html?from=regular> (referer: http://dalian.baixing.com/ershoufang/m6363/?afo=G34)
+2018-06-03 22:06:41 [scrapy.log] INFO: b'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.0; Acoo Browser; SLCC1; .NET CLR 2.0.50727; Media Center PC 5.0; .NET CLR 3.0.04506)'
+2018-06-03 22:06:41 [scrapy.core.scraper] DEBUG: Scraped from <200 http://dalian.baixing.com/ershoufang/a1412267691.html?from=regular>
+{'raw': <200 http://dalian.baixing.com/ershoufang/a1412267691.html?from=regular>}
+2018-06-03 22:06:43 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://dalian.baixing.com/ershoufang/a216294551.html?from=regular> (referer: http://dalian.baixing.com/ershoufang/m6363/?afo=G34)
+2018-06-03 22:06:43 [scrapy.log] INFO: b'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.0; Acoo Browser; SLCC1; .NET CLR 2.0.50727; Media Center PC 5.0; .NET CLR 3.0.04506)'
+2018-06-03 22:06:43 [scrapy.core.scraper] DEBUG: Scraped from <200 http://dalian.baixing.com/ershoufang/a216294551.html?from=regular>
+{'raw': <200 http://dalian.baixing.com/ershoufang/a216294551.html?from=regular>}
+2018-06-03 22:06:44 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://dalian.baixing.com/ershoufang/a1088599361.html> (referer: http://dalian.baixing.com/ershoufang/m181337/?afo=QjV)
+2018-06-03 22:06:44 [scrapy.log] INFO: b'Mozilla/5.0 (Windows; U; Windows NT 5.1; zh-CN) AppleWebKit/523.15 (KHTML, like Gecko, Safari/419.3) Arora/0.3 (Change: 287 c9dfb30)'
+2018-06-03 22:06:45 [scrapy.core.scraper] DEBUG: Scraped from <200 http://dalian.baixing.com/ershoufang/a1088599361.html>
+{'raw': <200 http://dalian.baixing.com/ershoufang/a1088599361.html>}
+2018-06-03 22:06:47 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://dalian.baixing.com/ershoufang/a495353417.html> (referer: http://dalian.baixing.com/ershoufang/m6354/?afo=SsI)
+2018-06-03 22:06:47 [scrapy.log] INFO: b'Mozilla/5.0 (Windows; U; Windows NT 5.1; zh-CN) AppleWebKit/523.15 (KHTML, like Gecko, Safari/419.3) Arora/0.3 (Change: 287 c9dfb30)'
+2018-06-03 22:06:47 [scrapy.core.scraper] DEBUG: Scraped from <200 http://dalian.baixing.com/ershoufang/a495353417.html>
+{'raw': <200 http://dalian.baixing.com/ershoufang/a495353417.html>}
+2018-06-03 22:06:50 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://dalian.baixing.com/ershoufang/a855532788.html?from=regular> (referer: http://dalian.baixing.com/ershoufang/m177332/?afo=VWN)
+2018-06-03 22:06:50 [scrapy.log] INFO: b'Mozilla/5.0 (Windows; U; Windows NT 5.1; zh-CN; rv:1.9) Gecko/20080705 Firefox/3.0 Kapiko/3.0'
+2018-06-03 22:06:51 [scrapy.core.scraper] DEBUG: Scraped from <200 http://dalian.baixing.com/ershoufang/a855532788.html?from=regular>
+{'raw': <200 http://dalian.baixing.com/ershoufang/a855532788.html?from=regular>}
+2018-06-03 22:06:53 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://dalian.baixing.com/ershoufang/a1388407602.html?from=regular> (referer: http://dalian.baixing.com/ershoufang/m6353/?afo=KIC)
+2018-06-03 22:06:53 [scrapy.log] INFO: b'Mozilla/5.0 (Windows; U; Windows NT 5.1; zh-CN) AppleWebKit/523.15 (KHTML, like Gecko, Safari/419.3) Arora/0.3 (Change: 287 c9dfb30)'
+2018-06-03 22:06:53 [scrapy.core.scraper] DEBUG: Scraped from <200 http://dalian.baixing.com/ershoufang/a1388407602.html?from=regular>
+{'raw': <200 http://dalian.baixing.com/ershoufang/a1388407602.html?from=regular>}
+2018-06-03 22:06:56 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://dalian.baixing.com/ershoufang/a1290445830.html?from=regular> (referer: http://dalian.baixing.com/ershoufang/m6359/?afo=xbt)
+2018-06-03 22:06:56 [scrapy.log] INFO: b'Mozilla/5.0 (Windows; U; Windows NT 5.1; zh-CN) AppleWebKit/523.15 (KHTML, like Gecko, Safari/419.3) Arora/0.3 (Change: 287 c9dfb30)'
+2018-06-03 22:06:56 [scrapy.core.scraper] DEBUG: Scraped from <200 http://dalian.baixing.com/ershoufang/a1290445830.html?from=regular>
+{'raw': <200 http://dalian.baixing.com/ershoufang/a1290445830.html?from=regular>}
+2018-06-03 22:06:59 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://dalian.baixing.com/ershoufang/a647088256.html> (referer: http://dalian.baixing.com/ershoufang/m6352/?afo=sBi)
+2018-06-03 22:06:59 [scrapy.log] INFO: b'Mozilla/5.0 (Windows; U; Windows NT 5.1; zh-CN; rv:1.9) Gecko/20080705 Firefox/3.0 Kapiko/3.0'
+2018-06-03 22:06:59 [scrapy.core.scraper] DEBUG: Scraped from <200 http://dalian.baixing.com/ershoufang/a647088256.html>
+{'raw': <200 http://dalian.baixing.com/ershoufang/a647088256.html>}
+2018-06-03 22:07:02 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://dalian.baixing.com/ershoufang/m6355/?page=2> (referer: http://dalian.baixing.com/ershoufang/m6355/?afo=FIa)
+2018-06-03 22:07:02 [scrapy.log] INFO: b'Mozilla/5.0 (compatible; MSIE 8.0; Windows NT 6.0; Trident/4.0; WOW64; Trident/4.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; .NET CLR 1.0.3705; .NET CLR 1.1.4322)'
+2018-06-03 22:07:04 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://dalian.baixing.com/ershoufang/a1407605899.html?from=regular> (referer: http://dalian.baixing.com/ershoufang/m6362/?afo=SG2)
+2018-06-03 22:07:04 [scrapy.log] INFO: b'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_3) AppleWebKit/535.20 (KHTML, like Gecko) Chrome/19.0.1036.7 Safari/535.20'
+2018-06-03 22:07:04 [scrapy.core.scraper] DEBUG: Scraped from <200 http://dalian.baixing.com/ershoufang/a1407605899.html?from=regular>
+{'raw': <200 http://dalian.baixing.com/ershoufang/a1407605899.html?from=regular>}
+2018-06-03 22:07:07 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://dalian.baixing.com/ershoufang/m6356/?page=2> (referer: http://dalian.baixing.com/ershoufang/m6356/?afo=A4t)
+2018-06-03 22:07:07 [scrapy.log] INFO: b'Mozilla/5.0 (Windows; U; Windows NT 5.1; zh-CN) AppleWebKit/523.15 (KHTML, like Gecko, Safari/419.3) Arora/0.3 (Change: 287 c9dfb30)'
+2018-06-03 22:07:08 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://dalian.baixing.com/ershoufang/m6357/?page=2> (referer: http://dalian.baixing.com/ershoufang/m6357/?afo=dsM)
+2018-06-03 22:07:08 [scrapy.log] INFO: b'Mozilla/5.0 (Windows; U; Windows NT 5.1; zh-CN) AppleWebKit/523.15 (KHTML, like Gecko, Safari/419.3) Arora/0.3 (Change: 287 c9dfb30)'
+2018-06-03 22:07:10 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://dalian.baixing.com/ershoufang/a1410751094.html> (referer: http://dalian.baixing.com/ershoufang/m6358/?afo=mA3)
+2018-06-03 22:07:10 [scrapy.log] INFO: b'Mozilla/5.0 (Windows; U; Windows NT 5.1; zh-CN; rv:1.9) Gecko/20080705 Firefox/3.0 Kapiko/3.0'
+2018-06-03 22:07:10 [scrapy.core.scraper] DEBUG: Scraped from <200 http://dalian.baixing.com/ershoufang/a1410751094.html>
+{'raw': <200 http://dalian.baixing.com/ershoufang/a1410751094.html>}
+2018-06-03 22:07:12 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://dalian.baixing.com/ershoufang/a1400511688.html?from=regular> (referer: http://dalian.baixing.com/ershoufang/m6361/?afo=cQF)
+2018-06-03 22:07:12 [scrapy.log] INFO: b'Mozilla/5.0 (Windows; U; MSIE 9.0; Windows NT 9.0; en-US)'
+2018-06-03 22:07:13 [scrapy.core.scraper] DEBUG: Scraped from <200 http://dalian.baixing.com/ershoufang/a1400511688.html?from=regular>
+{'raw': <200 http://dalian.baixing.com/ershoufang/a1400511688.html?from=regular>}
+2018-06-03 22:07:15 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://dalian.baixing.com/ershoufang/a1410413341.html?from=regular> (referer: http://dalian.baixing.com/ershoufang/m6366/?afo=uwD)
+2018-06-03 22:07:15 [scrapy.log] INFO: b'Mozilla/5.0 (Windows; U; Windows NT 5.1; zh-CN; rv:1.9) Gecko/20080705 Firefox/3.0 Kapiko/3.0'
+2018-06-03 22:07:15 [scrapy.core.scraper] DEBUG: Scraped from <200 http://dalian.baixing.com/ershoufang/a1410413341.html?from=regular>
+{'raw': <200 http://dalian.baixing.com/ershoufang/a1410413341.html?from=regular>}
+2018-06-03 22:07:17 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://dalian.baixing.com/ershoufang/a1410427512.html?from=regular> (referer: http://dalian.baixing.com/ershoufang/m6366/?afo=uwD)
+2018-06-03 22:07:17 [scrapy.log] INFO: b'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; AcooBrowser; .NET CLR 1.1.4322; .NET CLR 2.0.50727)'
+2018-06-03 22:07:17 [scrapy.core.scraper] DEBUG: Scraped from <200 http://dalian.baixing.com/ershoufang/a1410427512.html?from=regular>
+{'raw': <200 http://dalian.baixing.com/ershoufang/a1410427512.html?from=regular>}
+2018-06-03 22:07:19 [scrapy.extensions.logstats] INFO: Crawled 37 pages (at 25 pages/min), scraped 18 items (at 15 items/min)
+2018-06-03 22:07:19 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://dalian.baixing.com/ershoufang/a1410433098.html?from=regular> (referer: http://dalian.baixing.com/ershoufang/m6366/?afo=uwD)
+2018-06-03 22:07:19 [scrapy.log] INFO: b'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.0; Acoo Browser; SLCC1; .NET CLR 2.0.50727; Media Center PC 5.0; .NET CLR 3.0.04506)'
+2018-06-03 22:07:19 [scrapy.core.scraper] DEBUG: Scraped from <200 http://dalian.baixing.com/ershoufang/a1410433098.html?from=regular>
+{'raw': <200 http://dalian.baixing.com/ershoufang/a1410433098.html?from=regular>}
+2018-06-03 22:07:22 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://dalian.baixing.com/ershoufang/a1410437488.html?from=regular> (referer: http://dalian.baixing.com/ershoufang/m6366/?afo=uwD)
+2018-06-03 22:07:22 [scrapy.log] INFO: b'Mozilla/5.0 (Windows; U; Windows NT 5.1; zh-CN) AppleWebKit/523.15 (KHTML, like Gecko, Safari/419.3) Arora/0.3 (Change: 287 c9dfb30)'
+2018-06-03 22:07:22 [scrapy.core.scraper] DEBUG: Scraped from <200 http://dalian.baixing.com/ershoufang/a1410437488.html?from=regular>
+{'raw': <200 http://dalian.baixing.com/ershoufang/a1410437488.html?from=regular>}
+2018-06-03 22:07:25 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://dalian.baixing.com/ershoufang/a1410465873.html?from=regular> (referer: http://dalian.baixing.com/ershoufang/m6366/?afo=uwD)
+2018-06-03 22:07:25 [scrapy.log] INFO: b'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.0; Acoo Browser; SLCC1; .NET CLR 2.0.50727; Media Center PC 5.0; .NET CLR 3.0.04506)'
+2018-06-03 22:07:25 [scrapy.core.scraper] DEBUG: Scraped from <200 http://dalian.baixing.com/ershoufang/a1410465873.html?from=regular>
+{'raw': <200 http://dalian.baixing.com/ershoufang/a1410465873.html?from=regular>}
+2018-06-03 22:07:27 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://dalian.baixing.com/ershoufang/a1410467844.html?from=regular> (referer: http://dalian.baixing.com/ershoufang/m6366/?afo=uwD)
+2018-06-03 22:07:27 [scrapy.log] INFO: b'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; AcooBrowser; .NET CLR 1.1.4322; .NET CLR 2.0.50727)'
+2018-06-03 22:07:28 [scrapy.core.scraper] DEBUG: Scraped from <200 http://dalian.baixing.com/ershoufang/a1410467844.html?from=regular>
+{'raw': <200 http://dalian.baixing.com/ershoufang/a1410467844.html?from=regular>}
+2018-06-03 22:07:31 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://dalian.baixing.com/ershoufang/a1410473823.html?from=regular> (referer: http://dalian.baixing.com/ershoufang/m6366/?afo=uwD)
+2018-06-03 22:07:31 [scrapy.log] INFO: b'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/535.11 (KHTML, like Gecko) Chrome/17.0.963.56 Safari/535.11'
+2018-06-03 22:07:31 [scrapy.core.scraper] DEBUG: Scraped from <200 http://dalian.baixing.com/ershoufang/a1410473823.html?from=regular>
+{'raw': <200 http://dalian.baixing.com/ershoufang/a1410473823.html?from=regular>}
+2018-06-03 22:07:32 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://dalian.baixing.com/ershoufang/a1410491313.html?from=regular> (referer: http://dalian.baixing.com/ershoufang/m6366/?afo=uwD)
+2018-06-03 22:07:32 [scrapy.log] INFO: b'Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.9.0.8) Gecko Fedora/1.9.0.8-1.fc10 Kazehakase/0.5.6'
+2018-06-03 22:07:32 [scrapy.core.scraper] DEBUG: Scraped from <200 http://dalian.baixing.com/ershoufang/a1410491313.html?from=regular>
+{'raw': <200 http://dalian.baixing.com/ershoufang/a1410491313.html?from=regular>}
+2018-06-03 22:07:35 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://dalian.baixing.com/ershoufang/a1410511572.html?from=regular> (referer: http://dalian.baixing.com/ershoufang/m6366/?afo=uwD)
+2018-06-03 22:07:35 [scrapy.log] INFO: b'Mozilla/5.0 (Windows; U; MSIE 9.0; Windows NT 9.0; en-US)'
+2018-06-03 22:07:36 [scrapy.core.scraper] DEBUG: Scraped from <200 http://dalian.baixing.com/ershoufang/a1410511572.html?from=regular>
+{'raw': <200 http://dalian.baixing.com/ershoufang/a1410511572.html?from=regular>}
+2018-06-03 22:07:37 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://dalian.baixing.com/ershoufang/a1410513618.html?from=regular> (referer: http://dalian.baixing.com/ershoufang/m6366/?afo=uwD)
+2018-06-03 22:07:37 [scrapy.log] INFO: b'Mozilla/5.0 (X11; Linux i686; U;) Gecko/20070322 Kazehakase/0.4.5'
+2018-06-03 22:07:37 [scrapy.core.scraper] DEBUG: Scraped from <200 http://dalian.baixing.com/ershoufang/a1410513618.html?from=regular>
+{'raw': <200 http://dalian.baixing.com/ershoufang/a1410513618.html?from=regular>}
+2018-06-03 22:07:38 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://dalian.baixing.com/ershoufang/a1410522100.html?from=regular> (referer: http://dalian.baixing.com/ershoufang/m6366/?afo=uwD)
+2018-06-03 22:07:38 [scrapy.log] INFO: b'Mozilla/4.0 (compatible; MSIE 7.0b; Windows NT 5.2; .NET CLR 1.1.4322; .NET CLR 2.0.50727; InfoPath.2; .NET CLR 3.0.04506.30)'
+2018-06-03 22:07:39 [scrapy.core.scraper] DEBUG: Scraped from <200 http://dalian.baixing.com/ershoufang/a1410522100.html?from=regular>
+{'raw': <200 http://dalian.baixing.com/ershoufang/a1410522100.html?from=regular>}
+2018-06-03 22:07:41 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://dalian.baixing.com/ershoufang/m6355/?page=3> (referer: http://dalian.baixing.com/ershoufang/m6355/?page=2)
+2018-06-03 22:07:41 [scrapy.log] INFO: b'Mozilla/5.0 (Windows; U; Windows NT 5.1; zh-CN; rv:1.9) Gecko/20080705 Firefox/3.0 Kapiko/3.0'
+2018-06-03 22:07:43 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://dalian.baixing.com/ershoufang/a1410528250.html?from=regular> (referer: http://dalian.baixing.com/ershoufang/m6366/?afo=uwD)
+2018-06-03 22:07:43 [scrapy.log] INFO: b'Mozilla/5.0 (X11; Linux i686; U;) Gecko/20070322 Kazehakase/0.4.5'
+2018-06-03 22:07:43 [scrapy.core.scraper] DEBUG: Scraped from <200 http://dalian.baixing.com/ershoufang/a1410528250.html?from=regular>
+{'raw': <200 http://dalian.baixing.com/ershoufang/a1410528250.html?from=regular>}
+2018-06-03 22:07:45 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://dalian.baixing.com/ershoufang/m6356/?page=3> (referer: http://dalian.baixing.com/ershoufang/m6356/?page=2)
+2018-06-03 22:07:45 [scrapy.log] INFO: b'Mozilla/5.0 (X11; Linux i686; U;) Gecko/20070322 Kazehakase/0.4.5'
+2018-06-03 22:07:46 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://dalian.baixing.com/ershoufang/m6357/?page=3> (referer: http://dalian.baixing.com/ershoufang/m6357/?page=2)
+2018-06-03 22:07:46 [scrapy.log] INFO: b'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.0; Acoo Browser; SLCC1; .NET CLR 2.0.50727; Media Center PC 5.0; .NET CLR 3.0.04506)'
+2018-06-03 22:07:48 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET http://dalian.baixing.com/ershoufang/m181483/?afo=1ie> from <GET http://dalian.baixing.com/ershoufang/m181483/>
+2018-06-03 22:07:48 [scrapy.log] INFO: b'Mozilla/5.0 (Windows; U; MSIE 9.0; Windows NT 9.0; en-US)'
+2018-06-03 22:07:50 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET http://dalian.baixing.com/ershoufang/m181487/?afo=Zde> from <GET http://dalian.baixing.com/ershoufang/m181487/>
+2018-06-03 22:07:50 [scrapy.log] INFO: b'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_3) AppleWebKit/535.20 (KHTML, like Gecko) Chrome/19.0.1036.7 Safari/535.20'
+2018-06-03 22:07:52 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET http://dalian.baixing.com/ershoufang/m181485/?afo=JLK> from <GET http://dalian.baixing.com/ershoufang/m181485/>
+2018-06-03 22:07:52 [scrapy.log] INFO: b'Mozilla/5.0 (Windows; U; Windows NT 5.1; zh-CN; rv:1.9) Gecko/20080705 Firefox/3.0 Kapiko/3.0'
+2018-06-03 22:07:54 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://dalian.baixing.com/ershoufang/a1410538528.html?from=regular> (referer: http://dalian.baixing.com/ershoufang/m6366/?afo=uwD)
+2018-06-03 22:07:54 [scrapy.log] INFO: b'Mozilla/5.0 (compatible; MSIE 8.0; Windows NT 6.0; Trident/4.0; WOW64; Trident/4.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; .NET CLR 1.0.3705; .NET CLR 1.1.4322)'
+2018-06-03 22:07:54 [scrapy.core.scraper] DEBUG: Scraped from <200 http://dalian.baixing.com/ershoufang/a1410538528.html?from=regular>
+{'raw': <200 http://dalian.baixing.com/ershoufang/a1410538528.html?from=regular>}
+2018-06-03 22:07:57 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://dalian.baixing.com/ershoufang/a1410508498.html?from=regular> (referer: http://dalian.baixing.com/ershoufang/m6366/?afo=uwD)
+2018-06-03 22:07:57 [scrapy.log] INFO: b'Mozilla/4.0 (compatible; MSIE 7.0; AOL 9.5; AOLBuild 4337.35; Windows NT 5.1; .NET CLR 1.1.4322; .NET CLR 2.0.50727)'
+2018-06-03 22:07:57 [scrapy.core.scraper] DEBUG: Scraped from <200 http://dalian.baixing.com/ershoufang/a1410508498.html?from=regular>
+{'raw': <200 http://dalian.baixing.com/ershoufang/a1410508498.html?from=regular>}
+2018-06-03 22:07:59 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://dalian.baixing.com/ershoufang/a1410684309.html?from=regular> (referer: http://dalian.baixing.com/ershoufang/m6366/?afo=uwD)
+2018-06-03 22:07:59 [scrapy.log] INFO: b'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; AcooBrowser; .NET CLR 1.1.4322; .NET CLR 2.0.50727)'
+2018-06-03 22:07:59 [scrapy.core.scraper] DEBUG: Scraped from <200 http://dalian.baixing.com/ershoufang/a1410684309.html?from=regular>
+{'raw': <200 http://dalian.baixing.com/ershoufang/a1410684309.html?from=regular>}
+2018-06-03 22:08:02 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://dalian.baixing.com/ershoufang/a1410711353.html?from=regular> (referer: http://dalian.baixing.com/ershoufang/m6366/?afo=uwD)
+2018-06-03 22:08:02 [scrapy.log] INFO: b'Mozilla/5.0 (Windows; U; Windows NT 5.1; zh-CN; rv:1.9) Gecko/20080705 Firefox/3.0 Kapiko/3.0'
+2018-06-03 22:08:02 [scrapy.core.scraper] DEBUG: Scraped from <200 http://dalian.baixing.com/ershoufang/a1410711353.html?from=regular>
+{'raw': <200 http://dalian.baixing.com/ershoufang/a1410711353.html?from=regular>}
+2018-06-03 22:08:05 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://dalian.baixing.com/ershoufang/a1410714448.html?from=regular> (referer: http://dalian.baixing.com/ershoufang/m6366/?afo=uwD)
+2018-06-03 22:08:05 [scrapy.log] INFO: b'Mozilla/5.0 (Windows; U; MSIE 9.0; Windows NT 9.0; en-US)'
+2018-06-03 22:08:05 [scrapy.core.scraper] DEBUG: Scraped from <200 http://dalian.baixing.com/ershoufang/a1410714448.html?from=regular>
+{'raw': <200 http://dalian.baixing.com/ershoufang/a1410714448.html?from=regular>}
+2018-06-03 22:08:06 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://dalian.baixing.com/ershoufang/a1410728720.html?from=regular> (referer: http://dalian.baixing.com/ershoufang/m6366/?afo=uwD)
+2018-06-03 22:08:06 [scrapy.log] INFO: b'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; AcooBrowser; .NET CLR 1.1.4322; .NET CLR 2.0.50727)'
+2018-06-03 22:08:06 [scrapy.core.scraper] DEBUG: Scraped from <200 http://dalian.baixing.com/ershoufang/a1410728720.html?from=regular>
+{'raw': <200 http://dalian.baixing.com/ershoufang/a1410728720.html?from=regular>}
+2018-06-03 22:08:09 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://dalian.baixing.com/ershoufang/a1410751948.html?from=regular> (referer: http://dalian.baixing.com/ershoufang/m6366/?afo=uwD)
+2018-06-03 22:08:09 [scrapy.log] INFO: b'Mozilla/4.0 (compatible; MSIE 7.0b; Windows NT 5.2; .NET CLR 1.1.4322; .NET CLR 2.0.50727; InfoPath.2; .NET CLR 3.0.04506.30)'
+2018-06-03 22:08:10 [scrapy.core.scraper] DEBUG: Scraped from <200 http://dalian.baixing.com/ershoufang/a1410751948.html?from=regular>
+{'raw': <200 http://dalian.baixing.com/ershoufang/a1410751948.html?from=regular>}
+2018-06-03 22:08:12 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://dalian.baixing.com/ershoufang/a1410753348.html?from=regular> (referer: http://dalian.baixing.com/ershoufang/m6366/?afo=uwD)
+2018-06-03 22:08:12 [scrapy.log] INFO: b'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_3) AppleWebKit/535.20 (KHTML, like Gecko) Chrome/19.0.1036.7 Safari/535.20'
+2018-06-03 22:08:12 [scrapy.core.scraper] DEBUG: Scraped from <200 http://dalian.baixing.com/ershoufang/a1410753348.html?from=regular>
+{'raw': <200 http://dalian.baixing.com/ershoufang/a1410753348.html?from=regular>}
+2018-06-03 22:08:14 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://dalian.baixing.com/ershoufang/a1410779798.html?from=regular> (referer: http://dalian.baixing.com/ershoufang/m6366/?afo=uwD)
+2018-06-03 22:08:14 [scrapy.log] INFO: b'Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.8.1.2pre) Gecko/20070215 K-Ninja/2.1.1'
+2018-06-03 22:08:15 [scrapy.core.scraper] DEBUG: Scraped from <200 http://dalian.baixing.com/ershoufang/a1410779798.html?from=regular>
+{'raw': <200 http://dalian.baixing.com/ershoufang/a1410779798.html?from=regular>}
+2018-06-03 22:08:17 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://dalian.baixing.com/ershoufang/a1395203894.html?from=regular> (referer: http://dalian.baixing.com/ershoufang/m6366/?afo=uwD)
+2018-06-03 22:08:17 [scrapy.log] INFO: b'Mozilla/4.0 (compatible; MSIE 7.0b; Windows NT 5.2; .NET CLR 1.1.4322; .NET CLR 2.0.50727; InfoPath.2; .NET CLR 3.0.04506.30)'
+2018-06-03 22:08:17 [scrapy.core.scraper] DEBUG: Scraped from <200 http://dalian.baixing.com/ershoufang/a1395203894.html?from=regular>
+{'raw': <200 http://dalian.baixing.com/ershoufang/a1395203894.html?from=regular>}
+2018-06-03 22:08:19 [scrapy.extensions.logstats] INFO: Crawled 60 pages (at 23 pages/min), scraped 38 items (at 20 items/min)
+2018-06-03 22:08:20 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://dalian.baixing.com/ershoufang/m6355/?page=4> (referer: http://dalian.baixing.com/ershoufang/m6355/?page=3)
+2018-06-03 22:08:20 [scrapy.log] INFO: b'Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; Win64; x64; Trident/5.0; .NET CLR 3.5.30729; .NET CLR 3.0.30729; .NET CLR 2.0.50727; Media Center PC 6.0)'
+2018-06-03 22:08:22 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://dalian.baixing.com/ershoufang/a1361722919.html?from=regular> (referer: http://dalian.baixing.com/ershoufang/m6366/?afo=uwD)
+2018-06-03 22:08:22 [scrapy.log] INFO: b'Mozilla/5.0 (Windows; U; MSIE 9.0; Windows NT 9.0; en-US)'
+2018-06-03 22:08:22 [scrapy.core.scraper] DEBUG: Scraped from <200 http://dalian.baixing.com/ershoufang/a1361722919.html?from=regular>
+{'raw': <200 http://dalian.baixing.com/ershoufang/a1361722919.html?from=regular>}
+2018-06-03 22:08:25 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://dalian.baixing.com/ershoufang/m6356/?page=4> (referer: http://dalian.baixing.com/ershoufang/m6356/?page=3)
+2018-06-03 22:08:25 [scrapy.log] INFO: b'Mozilla/4.0 (compatible; MSIE 7.0; AOL 9.5; AOLBuild 4337.35; Windows NT 5.1; .NET CLR 1.1.4322; .NET CLR 2.0.50727)'
+2018-06-03 22:08:28 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://dalian.baixing.com/ershoufang/m181483/?afo=1ie> (referer: http://dalian.baixing.com/ershoufang/m6356/?page=2)
+2018-06-03 22:08:28 [scrapy.log] INFO: b'Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.8.1.2pre) Gecko/20070215 K-Ninja/2.1.1'
+2018-06-03 22:08:30 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://dalian.baixing.com/ershoufang/m181487/?afo=Zde> (referer: http://dalian.baixing.com/ershoufang/m6356/?page=2)
+2018-06-03 22:08:30 [scrapy.log] INFO: b'Mozilla/4.0 (compatible; MSIE 7.0; AOL 9.5; AOLBuild 4337.35; Windows NT 5.1; .NET CLR 1.1.4322; .NET CLR 2.0.50727)'
+2018-06-03 22:08:33 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://dalian.baixing.com/ershoufang/m181485/?afo=JLK> (referer: http://dalian.baixing.com/ershoufang/m6356/?page=2)
+2018-06-03 22:08:33 [scrapy.log] INFO: b'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_3) AppleWebKit/535.20 (KHTML, like Gecko) Chrome/19.0.1036.7 Safari/535.20'
+2018-06-03 22:08:36 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://dalian.baixing.com/ershoufang/m6357/?page=4> (referer: http://dalian.baixing.com/ershoufang/m6357/?page=3)
+2018-06-03 22:08:36 [scrapy.log] INFO: b'Mozilla/5.0 (X11; U; Linux; en-US) AppleWebKit/527+ (KHTML, like Gecko, Safari/419.3) Arora/0.6'
+2018-06-03 22:08:38 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://dalian.baixing.com/ershoufang/a1404305215.html?from=regular> (referer: http://dalian.baixing.com/ershoufang/m6366/?afo=uwD)
+2018-06-03 22:08:38 [scrapy.log] INFO: b'Mozilla/5.0 (Windows; U; Windows NT 5.1; zh-CN; rv:1.9) Gecko/20080705 Firefox/3.0 Kapiko/3.0'
+2018-06-03 22:08:38 [scrapy.core.scraper] DEBUG: Scraped from <200 http://dalian.baixing.com/ershoufang/a1404305215.html?from=regular>
+{'raw': <200 http://dalian.baixing.com/ershoufang/a1404305215.html?from=regular>}
+2018-06-03 22:08:41 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://dalian.baixing.com/ershoufang/a1368947677.html?from=regular> (referer: http://dalian.baixing.com/ershoufang/m6366/?afo=uwD)
+2018-06-03 22:08:41 [scrapy.log] INFO: b'Mozilla/5.0 (Windows; U; MSIE 9.0; Windows NT 9.0; en-US)'
+2018-06-03 22:08:41 [scrapy.core.scraper] DEBUG: Scraped from <200 http://dalian.baixing.com/ershoufang/a1368947677.html?from=regular>
+{'raw': <200 http://dalian.baixing.com/ershoufang/a1368947677.html?from=regular>}
+2018-06-03 22:08:43 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://dalian.baixing.com/ershoufang/a1340007778.html?from=regular> (referer: http://dalian.baixing.com/ershoufang/m6366/?afo=uwD)
+2018-06-03 22:08:43 [scrapy.log] INFO: b'Mozilla/5.0 (X11; U; Linux; en-US) AppleWebKit/527+ (KHTML, like Gecko, Safari/419.3) Arora/0.6'
+2018-06-03 22:08:43 [scrapy.core.scraper] DEBUG: Scraped from <200 http://dalian.baixing.com/ershoufang/a1340007778.html?from=regular>
+{'raw': <200 http://dalian.baixing.com/ershoufang/a1340007778.html?from=regular>}
+2018-06-03 22:08:45 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://dalian.baixing.com/ershoufang/a1410497315.html?from=regular> (referer: http://dalian.baixing.com/ershoufang/m6366/?afo=uwD)
+2018-06-03 22:08:45 [scrapy.log] INFO: b'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.0; Acoo Browser; SLCC1; .NET CLR 2.0.50727; Media Center PC 5.0; .NET CLR 3.0.04506)'
+2018-06-03 22:08:45 [scrapy.core.scraper] DEBUG: Scraped from <200 http://dalian.baixing.com/ershoufang/a1410497315.html?from=regular>
+{'raw': <200 http://dalian.baixing.com/ershoufang/a1410497315.html?from=regular>}
+2018-06-03 22:08:48 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://dalian.baixing.com/ershoufang/a1410579884.html?from=regular> (referer: http://dalian.baixing.com/ershoufang/m6366/?afo=uwD)
+2018-06-03 22:08:48 [scrapy.log] INFO: b'Mozilla/4.0 (compatible; MSIE 7.0; AOL 9.5; AOLBuild 4337.35; Windows NT 5.1; .NET CLR 1.1.4322; .NET CLR 2.0.50727)'
+2018-06-03 22:08:48 [scrapy.core.scraper] DEBUG: Scraped from <200 http://dalian.baixing.com/ershoufang/a1410579884.html?from=regular>
+{'raw': <200 http://dalian.baixing.com/ershoufang/a1410579884.html?from=regular>}
+2018-06-03 22:08:51 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://dalian.baixing.com/ershoufang/a1411098227.html?from=regular> (referer: http://dalian.baixing.com/ershoufang/m6366/?afo=uwD)
+2018-06-03 22:08:51 [scrapy.log] INFO: b'Mozilla/5.0 (X11; Linux i686; U;) Gecko/20070322 Kazehakase/0.4.5'
+2018-06-03 22:08:51 [scrapy.core.scraper] DEBUG: Scraped from <200 http://dalian.baixing.com/ershoufang/a1411098227.html?from=regular>
+{'raw': <200 http://dalian.baixing.com/ershoufang/a1411098227.html?from=regular>}
+2018-06-03 22:08:53 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://dalian.baixing.com/ershoufang/a1411112359.html?from=regular> (referer: http://dalian.baixing.com/ershoufang/m6366/?afo=uwD)
+2018-06-03 22:08:53 [scrapy.log] INFO: b'Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.8.1.2pre) Gecko/20070215 K-Ninja/2.1.1'
+2018-06-03 22:08:53 [scrapy.core.scraper] DEBUG: Scraped from <200 http://dalian.baixing.com/ershoufang/a1411112359.html?from=regular>
+{'raw': <200 http://dalian.baixing.com/ershoufang/a1411112359.html?from=regular>}
+2018-06-03 22:08:56 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://dalian.baixing.com/ershoufang/a1411157602.html?from=regular> (referer: http://dalian.baixing.com/ershoufang/m6366/?afo=uwD)
+2018-06-03 22:08:56 [scrapy.log] INFO: b'Mozilla/5.0 (Windows; U; MSIE 9.0; Windows NT 9.0; en-US)'
+2018-06-03 22:08:56 [scrapy.core.scraper] DEBUG: Scraped from <200 http://dalian.baixing.com/ershoufang/a1411157602.html?from=regular>
+{'raw': <200 http://dalian.baixing.com/ershoufang/a1411157602.html?from=regular>}
+2018-06-03 22:08:58 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://dalian.baixing.com/ershoufang/a1411158011.html?from=regular> (referer: http://dalian.baixing.com/ershoufang/m6366/?afo=uwD)
+2018-06-03 22:08:58 [scrapy.log] INFO: b'Mozilla/5.0 (compatible; MSIE 8.0; Windows NT 6.0; Trident/4.0; WOW64; Trident/4.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; .NET CLR 1.0.3705; .NET CLR 1.1.4322)'
+2018-06-03 22:08:58 [scrapy.core.scraper] DEBUG: Scraped from <200 http://dalian.baixing.com/ershoufang/a1411158011.html?from=regular>
+{'raw': <200 http://dalian.baixing.com/ershoufang/a1411158011.html?from=regular>}
+2018-06-03 22:09:02 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://dalian.baixing.com/ershoufang/a1411182137.html?from=regular> (referer: http://dalian.baixing.com/ershoufang/m6366/?afo=uwD)
+2018-06-03 22:09:02 [scrapy.log] INFO: b'Mozilla/4.0 (compatible; MSIE 7.0; AOL 9.5; AOLBuild 4337.35; Windows NT 5.1; .NET CLR 1.1.4322; .NET CLR 2.0.50727)'
+2018-06-03 22:09:02 [scrapy.core.scraper] DEBUG: Scraped from <200 http://dalian.baixing.com/ershoufang/a1411182137.html?from=regular>
+{'raw': <200 http://dalian.baixing.com/ershoufang/a1411182137.html?from=regular>}
+2018-06-03 22:09:03 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://dalian.baixing.com/ershoufang/m6355/?page=5> (referer: http://dalian.baixing.com/ershoufang/m6355/?page=4)
+2018-06-03 22:09:03 [scrapy.log] INFO: b'Mozilla/5.0 (compatible; MSIE 8.0; Windows NT 6.0; Trident/4.0; WOW64; Trident/4.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; .NET CLR 1.0.3705; .NET CLR 1.1.4322)'
+2018-06-03 22:09:05 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://dalian.baixing.com/ershoufang/a1411196478.html?from=regular> (referer: http://dalian.baixing.com/ershoufang/m6366/?afo=uwD)
+2018-06-03 22:09:05 [scrapy.log] INFO: b'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_3) AppleWebKit/535.20 (KHTML, like Gecko) Chrome/19.0.1036.7 Safari/535.20'
+2018-06-03 22:09:05 [scrapy.core.scraper] DEBUG: Scraped from <200 http://dalian.baixing.com/ershoufang/a1411196478.html?from=regular>
+{'raw': <200 http://dalian.baixing.com/ershoufang/a1411196478.html?from=regular>}
+2018-06-03 22:09:07 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://dalian.baixing.com/ershoufang/m6356/?page=5> (referer: http://dalian.baixing.com/ershoufang/m6356/?page=4)
+2018-06-03 22:09:07 [scrapy.log] INFO: b'Opera/9.80 (Macintosh; Intel Mac OS X 10.6.8; U; fr) Presto/2.9.168 Version/11.52'
+2018-06-03 22:09:09 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://dalian.baixing.com/ershoufang/a1371278118.html?from=suggestion&sgs=stepback> (referer: http://dalian.baixing.com/ershoufang/m181483/?afo=1ie)
+2018-06-03 22:09:09 [scrapy.log] INFO: b'Mozilla/5.0 (Windows; U; MSIE 9.0; Windows NT 9.0; en-US)'
+2018-06-03 22:09:09 [scrapy.core.scraper] DEBUG: Scraped from <200 http://dalian.baixing.com/ershoufang/a1371278118.html?from=suggestion&sgs=stepback>
+{'raw': <200 http://dalian.baixing.com/ershoufang/a1371278118.html?from=suggestion&sgs=stepback>}
+2018-06-03 22:09:12 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://dalian.baixing.com/ershoufang/a1398569837.html?from=suggestion&sgs=stepback> (referer: http://dalian.baixing.com/ershoufang/m181487/?afo=Zde)
+2018-06-03 22:09:12 [scrapy.log] INFO: b'Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; Win64; x64; Trident/5.0; .NET CLR 3.5.30729; .NET CLR 3.0.30729; .NET CLR 2.0.50727; Media Center PC 6.0)'
+2018-06-03 22:09:12 [scrapy.core.scraper] DEBUG: Scraped from <200 http://dalian.baixing.com/ershoufang/a1398569837.html?from=suggestion&sgs=stepback>
+{'raw': <200 http://dalian.baixing.com/ershoufang/a1398569837.html?from=suggestion&sgs=stepback>}
+2018-06-03 22:09:14 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://dalian.baixing.com/ershoufang/m181485/?page=2> (referer: http://dalian.baixing.com/ershoufang/m181485/?afo=JLK)
+2018-06-03 22:09:14 [scrapy.log] INFO: b'Mozilla/4.0 (compatible; MSIE 7.0; AOL 9.5; AOLBuild 4337.35; Windows NT 5.1; .NET CLR 1.1.4322; .NET CLR 2.0.50727)'
+2018-06-03 22:09:17 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://dalian.baixing.com/ershoufang/m6357/?page=5> (referer: http://dalian.baixing.com/ershoufang/m6357/?page=4)
+2018-06-03 22:09:17 [scrapy.log] INFO: b'Mozilla/5.0 (Windows; U; MSIE 9.0; Windows NT 9.0; en-US)'
+2018-06-03 22:09:19 [scrapy.extensions.logstats] INFO: Crawled 84 pages (at 24 pages/min), scraped 52 items (at 14 items/min)
+2018-06-03 22:09:19 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://dalian.baixing.com/ershoufang/a1279123268.html?from=suggestion&sgs=stepback> (referer: http://dalian.baixing.com/ershoufang/m181487/?afo=Zde)
+2018-06-03 22:09:19 [scrapy.log] INFO: b'Mozilla/5.0 (Windows; U; Windows NT 5.1; zh-CN; rv:1.9) Gecko/20080705 Firefox/3.0 Kapiko/3.0'
+2018-06-03 22:09:20 [scrapy.core.scraper] DEBUG: Scraped from <200 http://dalian.baixing.com/ershoufang/a1279123268.html?from=suggestion&sgs=stepback>
+{'raw': <200 http://dalian.baixing.com/ershoufang/a1279123268.html?from=suggestion&sgs=stepback>}
+2018-06-03 22:09:21 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://dalian.baixing.com/ershoufang/a1371253398.html?from=suggestion&sgs=stepback> (referer: http://dalian.baixing.com/ershoufang/m181487/?afo=Zde)
+2018-06-03 22:09:21 [scrapy.log] INFO: b'Mozilla/5.0 (compatible; MSIE 8.0; Windows NT 6.0; Trident/4.0; WOW64; Trident/4.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; .NET CLR 1.0.3705; .NET CLR 1.1.4322)'
+2018-06-03 22:09:21 [scrapy.core.scraper] DEBUG: Scraped from <200 http://dalian.baixing.com/ershoufang/a1371253398.html?from=suggestion&sgs=stepback>
+{'raw': <200 http://dalian.baixing.com/ershoufang/a1371253398.html?from=suggestion&sgs=stepback>}
+2018-06-03 22:09:23 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://dalian.baixing.com/ershoufang/a1387960458.html?from=suggestion&sgs=stepback> (referer: http://dalian.baixing.com/ershoufang/m181487/?afo=Zde)
+2018-06-03 22:09:23 [scrapy.log] INFO: b'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_3) AppleWebKit/535.20 (KHTML, like Gecko) Chrome/19.0.1036.7 Safari/535.20'
+2018-06-03 22:09:23 [scrapy.core.scraper] DEBUG: Scraped from <200 http://dalian.baixing.com/ershoufang/a1387960458.html?from=suggestion&sgs=stepback>
+{'raw': <200 http://dalian.baixing.com/ershoufang/a1387960458.html?from=suggestion&sgs=stepback>}
+2018-06-03 22:09:24 [scrapy.crawler] INFO: Received SIG_UNBLOCK, shutting down gracefully. Send again to force 
+2018-06-03 22:09:24 [scrapy.core.engine] INFO: Closing spider (shutdown)
+2018-06-03 22:09:24 [scrapy.crawler] INFO: Received SIG_UNBLOCK twice, forcing unclean shutdown
+2018-06-03 22:09:31 [scrapy.utils.log] INFO: Scrapy 1.5.0 started (bot: ershoufang_bx)
+2018-06-03 22:09:31 [scrapy.utils.log] INFO: Versions: lxml 4.1.1.0, libxml2 2.9.7, cssselect 1.0.3, parsel 1.4.0, w3lib 1.19.0, Twisted 17.9.0, Python 3.6.4 (default, Mar  9 2018, 23:15:03) - [GCC 4.2.1 Compatible Apple LLVM 9.0.0 (clang-900.0.39.2)], pyOpenSSL 17.5.0 (OpenSSL 1.1.0g  2 Nov 2017), cryptography 2.1.4, Platform Darwin-17.4.0-x86_64-i386-64bit
+2018-06-03 22:09:31 [scrapy.crawler] INFO: Overridden settings: {'BOT_NAME': 'ershoufang_bx', 'DOWNLOAD_DELAY': 2, 'LOG_FILE': 'log.txt', 'NEWSPIDER_MODULE': 'ershoufang_bx.spiders', 'SPIDER_MODULES': ['ershoufang_bx.spiders']}
+2018-06-03 22:09:31 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.logstats.LogStats']
+2018-06-03 22:09:31 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'ershoufang_bx.middlewares.CustomUserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2018-06-03 22:09:31 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2018-06-03 22:09:31 [scrapy.middleware] INFO: Enabled item pipelines:
+['ershoufang_bx.pipelines.ershoufang_bxPipeline']
+2018-06-03 22:09:31 [scrapy.core.engine] INFO: Spider opened
+2018-06-03 22:09:31 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2018-06-03 22:09:31 [scrapy.extensions.telnet] DEBUG: Telnet console listening on 127.0.0.1:6024
+2018-06-03 22:09:31 [scrapy.log] INFO: b'Mozilla/5.0 (Windows; U; MSIE 9.0; Windows NT 9.0; en-US)'
+2018-06-03 22:09:31 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET http://dalian.baixing.com/ershoufang/?afo=mWf> from <GET http://dalian.baixing.com/ershoufang/>
+2018-06-03 22:09:31 [scrapy.log] INFO: b'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; AcooBrowser; .NET CLR 1.1.4322; .NET CLR 2.0.50727)'
+2018-06-03 22:09:34 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://dalian.baixing.com/ershoufang/?afo=mWf> (referer: None)
+2018-06-03 22:09:34 [scrapy.log] INFO: b'Opera/9.80 (Macintosh; Intel Mac OS X 10.6.8; U; fr) Presto/2.9.168 Version/11.52'
+2018-06-03 22:09:34 [scrapy.log] INFO: b'Opera/9.80 (Macintosh; Intel Mac OS X 10.6.8; U; fr) Presto/2.9.168 Version/11.52'
+2018-06-03 22:09:34 [scrapy.log] INFO: b'Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; Win64; x64; Trident/5.0; .NET CLR 3.5.30729; .NET CLR 3.0.30729; .NET CLR 2.0.50727; Media Center PC 6.0)'
+2018-06-03 22:09:34 [scrapy.log] INFO: b'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; AcooBrowser; .NET CLR 1.1.4322; .NET CLR 2.0.50727)'
+2018-06-03 22:09:34 [scrapy.log] INFO: b'Mozilla/5.0 (compatible; MSIE 8.0; Windows NT 6.0; Trident/4.0; WOW64; Trident/4.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; .NET CLR 1.0.3705; .NET CLR 1.1.4322)'
+2018-06-03 22:09:34 [scrapy.log] INFO: b'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_3) AppleWebKit/535.20 (KHTML, like Gecko) Chrome/19.0.1036.7 Safari/535.20'
+2018-06-03 22:09:34 [scrapy.log] INFO: b'Opera/9.80 (Macintosh; Intel Mac OS X 10.6.8; U; fr) Presto/2.9.168 Version/11.52'
+2018-06-03 22:09:34 [scrapy.log] INFO: b'Mozilla/4.0 (compatible; MSIE 7.0b; Windows NT 5.2; .NET CLR 1.1.4322; .NET CLR 2.0.50727; InfoPath.2; .NET CLR 3.0.04506.30)'
+2018-06-03 22:09:34 [scrapy.log] INFO: b'Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.8.1.2pre) Gecko/20070215 K-Ninja/2.1.1'
+2018-06-03 22:09:34 [scrapy.log] INFO: b'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_3) AppleWebKit/535.20 (KHTML, like Gecko) Chrome/19.0.1036.7 Safari/535.20'
+2018-06-03 22:09:34 [scrapy.log] INFO: b'Mozilla/4.0 (compatible; MSIE 7.0b; Windows NT 5.2; .NET CLR 1.1.4322; .NET CLR 2.0.50727; InfoPath.2; .NET CLR 3.0.04506.30)'
+2018-06-03 22:09:34 [scrapy.log] INFO: b'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; AcooBrowser; .NET CLR 1.1.4322; .NET CLR 2.0.50727)'
+2018-06-03 22:09:34 [scrapy.log] INFO: b'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/535.11 (KHTML, like Gecko) Chrome/17.0.963.56 Safari/535.11'
+2018-06-03 22:09:34 [scrapy.log] INFO: b'Mozilla/5.0 (Windows; U; Windows NT 5.1; zh-CN; rv:1.9) Gecko/20080705 Firefox/3.0 Kapiko/3.0'
+2018-06-03 22:09:34 [scrapy.log] INFO: b'Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.8.1.2pre) Gecko/20070215 K-Ninja/2.1.1'
+2018-06-03 22:09:34 [scrapy.log] INFO: b'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/535.11 (KHTML, like Gecko) Chrome/17.0.963.56 Safari/535.11'
+2018-06-03 22:09:37 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://dalian.baixing.com/ershoufang/?page=2> (referer: http://dalian.baixing.com/ershoufang/?afo=mWf)
+2018-06-03 22:09:37 [scrapy.log] INFO: b'Mozilla/5.0 (Windows; U; Windows NT 5.1; zh-CN) AppleWebKit/523.15 (KHTML, like Gecko, Safari/419.3) Arora/0.3 (Change: 287 c9dfb30)'
+2018-06-03 22:09:38 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://dalian.baixing.com/ershoufang/a1410648927.html> (referer: http://dalian.baixing.com/ershoufang/?afo=mWf)
+2018-06-03 22:09:38 [scrapy.log] INFO: b'Mozilla/5.0 (compatible; MSIE 8.0; Windows NT 6.0; Trident/4.0; WOW64; Trident/4.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; .NET CLR 1.0.3705; .NET CLR 1.1.4322)'
+2018-06-03 22:09:38 [py.warnings] WARNING: /usr/local/lib/python3.6/site-packages/bs4/__init__.py:181: UserWarning: No parser was explicitly specified, so I'm using the best available HTML parser for this system ("lxml"). This usually isn't a problem, but if you run this code on another system, or in a different virtual environment, it may use a different parser and behave differently.
+
+The code that caused this warning is on line 11 of the file /usr/local/bin/scrapy. To get rid of this warning, change code that looks like this:
+
+ BeautifulSoup(YOUR_MARKUP})
+
+to this:
+
+ BeautifulSoup(YOUR_MARKUP, "lxml")
+
+  markup_type=markup_type))
+
+2018-06-03 22:09:39 [scrapy.core.scraper] DEBUG: Scraped from <200 http://dalian.baixing.com/ershoufang/a1410648927.html>
+{'raw': <200 http://dalian.baixing.com/ershoufang/a1410648927.html>}
+2018-06-03 22:09:40 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://dalian.baixing.com/ershoufang/a1278527026.html> (referer: http://dalian.baixing.com/ershoufang/?afo=mWf)
+2018-06-03 22:09:40 [scrapy.log] INFO: b'Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.8.1.2pre) Gecko/20070215 K-Ninja/2.1.1'
+2018-06-03 22:09:40 [scrapy.core.scraper] DEBUG: Scraped from <200 http://dalian.baixing.com/ershoufang/a1278527026.html>
+{'raw': <200 http://dalian.baixing.com/ershoufang/a1278527026.html>}
+2018-06-03 22:09:43 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://dalian.baixing.com/ershoufang/a1288583294.html> (referer: http://dalian.baixing.com/ershoufang/?afo=mWf)
+2018-06-03 22:09:43 [scrapy.log] INFO: b'Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; Win64; x64; Trident/5.0; .NET CLR 3.5.30729; .NET CLR 3.0.30729; .NET CLR 2.0.50727; Media Center PC 6.0)'
+2018-06-03 22:09:43 [scrapy.core.scraper] DEBUG: Scraped from <200 http://dalian.baixing.com/ershoufang/a1288583294.html>
+{'raw': <200 http://dalian.baixing.com/ershoufang/a1288583294.html>}
+2018-06-03 22:09:46 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://dalian.baixing.com/ershoufang/a1327827183.html> (referer: http://dalian.baixing.com/ershoufang/?afo=mWf)
+2018-06-03 22:09:46 [scrapy.log] INFO: b'Mozilla/4.0 (compatible; MSIE 7.0b; Windows NT 5.2; .NET CLR 1.1.4322; .NET CLR 2.0.50727; InfoPath.2; .NET CLR 3.0.04506.30)'
+2018-06-03 22:09:46 [scrapy.core.scraper] DEBUG: Scraped from <200 http://dalian.baixing.com/ershoufang/a1327827183.html>
+{'raw': <200 http://dalian.baixing.com/ershoufang/a1327827183.html>}
+2018-06-03 22:09:49 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://dalian.baixing.com/ershoufang/a1315075560.html> (referer: http://dalian.baixing.com/ershoufang/?afo=mWf)
+2018-06-03 22:09:49 [scrapy.log] INFO: b'Mozilla/5.0 (compatible; MSIE 8.0; Windows NT 6.0; Trident/4.0; WOW64; Trident/4.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; .NET CLR 1.0.3705; .NET CLR 1.1.4322)'
+2018-06-03 22:09:49 [scrapy.core.scraper] DEBUG: Scraped from <200 http://dalian.baixing.com/ershoufang/a1315075560.html>
+{'raw': <200 http://dalian.baixing.com/ershoufang/a1315075560.html>}
+2018-06-03 22:09:51 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://dalian.baixing.com/ershoufang/a1283583781.html> (referer: http://dalian.baixing.com/ershoufang/?afo=mWf)
+2018-06-03 22:09:51 [scrapy.log] INFO: b'Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.8.1.2pre) Gecko/20070215 K-Ninja/2.1.1'
+2018-06-03 22:09:51 [scrapy.core.scraper] DEBUG: Scraped from <200 http://dalian.baixing.com/ershoufang/a1283583781.html>
+{'raw': <200 http://dalian.baixing.com/ershoufang/a1283583781.html>}
+2018-06-03 22:09:53 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://dalian.baixing.com/ershoufang/a1371312121.html> (referer: http://dalian.baixing.com/ershoufang/?afo=mWf)
+2018-06-03 22:09:53 [scrapy.log] INFO: b'Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.8.1.2pre) Gecko/20070215 K-Ninja/2.1.1'
+2018-06-03 22:09:53 [scrapy.core.scraper] DEBUG: Scraped from <200 http://dalian.baixing.com/ershoufang/a1371312121.html>
+{'raw': <200 http://dalian.baixing.com/ershoufang/a1371312121.html>}
+2018-06-03 22:09:56 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://dalian.baixing.com/ershoufang/a1293717558.html> (referer: http://dalian.baixing.com/ershoufang/?afo=mWf)
+2018-06-03 22:09:56 [scrapy.log] INFO: b'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/535.11 (KHTML, like Gecko) Chrome/17.0.963.56 Safari/535.11'
+2018-06-03 22:09:56 [scrapy.core.scraper] DEBUG: Scraped from <200 http://dalian.baixing.com/ershoufang/a1293717558.html>
+{'raw': <200 http://dalian.baixing.com/ershoufang/a1293717558.html>}
+2018-06-03 22:09:59 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://dalian.baixing.com/ershoufang/a1283527968.html> (referer: http://dalian.baixing.com/ershoufang/?afo=mWf)
+2018-06-03 22:09:59 [scrapy.log] INFO: b'Mozilla/5.0 (Windows; U; MSIE 9.0; Windows NT 9.0; en-US)'
+2018-06-03 22:09:59 [scrapy.core.scraper] DEBUG: Scraped from <200 http://dalian.baixing.com/ershoufang/a1283527968.html>
+{'raw': <200 http://dalian.baixing.com/ershoufang/a1283527968.html>}
+2018-06-03 22:10:01 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://dalian.baixing.com/ershoufang/a1350279157.html> (referer: http://dalian.baixing.com/ershoufang/?afo=mWf)
+2018-06-03 22:10:01 [scrapy.log] INFO: b'Mozilla/5.0 (X11; U; Linux; en-US) AppleWebKit/527+ (KHTML, like Gecko, Safari/419.3) Arora/0.6'
+2018-06-03 22:10:01 [scrapy.core.scraper] DEBUG: Scraped from <200 http://dalian.baixing.com/ershoufang/a1350279157.html>
+{'raw': <200 http://dalian.baixing.com/ershoufang/a1350279157.html>}
+2018-06-03 22:10:03 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://dalian.baixing.com/ershoufang/a1323977104.html> (referer: http://dalian.baixing.com/ershoufang/?afo=mWf)
+2018-06-03 22:10:03 [scrapy.log] INFO: b'Opera/9.80 (Macintosh; Intel Mac OS X 10.6.8; U; fr) Presto/2.9.168 Version/11.52'
+2018-06-03 22:10:04 [scrapy.core.scraper] DEBUG: Scraped from <200 http://dalian.baixing.com/ershoufang/a1323977104.html>
+{'raw': <200 http://dalian.baixing.com/ershoufang/a1323977104.html>}
+2018-06-03 22:10:06 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://dalian.baixing.com/ershoufang/a1283576614.html> (referer: http://dalian.baixing.com/ershoufang/?afo=mWf)
+2018-06-03 22:10:06 [scrapy.log] INFO: b'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/535.11 (KHTML, like Gecko) Chrome/17.0.963.56 Safari/535.11'
+2018-06-03 22:10:06 [scrapy.core.scraper] DEBUG: Scraped from <200 http://dalian.baixing.com/ershoufang/a1283576614.html>
+{'raw': <200 http://dalian.baixing.com/ershoufang/a1283576614.html>}
+2018-06-03 22:10:09 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://dalian.baixing.com/ershoufang/a1293727448.html> (referer: http://dalian.baixing.com/ershoufang/?afo=mWf)
+2018-06-03 22:10:09 [scrapy.log] INFO: b'Mozilla/4.0 (compatible; MSIE 7.0b; Windows NT 5.2; .NET CLR 1.1.4322; .NET CLR 2.0.50727; InfoPath.2; .NET CLR 3.0.04506.30)'
+2018-06-03 22:10:09 [scrapy.core.scraper] DEBUG: Scraped from <200 http://dalian.baixing.com/ershoufang/a1293727448.html>
+{'raw': <200 http://dalian.baixing.com/ershoufang/a1293727448.html>}
+2018-06-03 22:10:12 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://dalian.baixing.com/ershoufang/a1371328815.html> (referer: http://dalian.baixing.com/ershoufang/?afo=mWf)
+2018-06-03 22:10:12 [scrapy.log] INFO: b'Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; Win64; x64; Trident/5.0; .NET CLR 3.5.30729; .NET CLR 3.0.30729; .NET CLR 2.0.50727; Media Center PC 6.0)'
+2018-06-03 22:10:12 [scrapy.core.scraper] DEBUG: Scraped from <200 http://dalian.baixing.com/ershoufang/a1371328815.html>
+{'raw': <200 http://dalian.baixing.com/ershoufang/a1371328815.html>}
+2018-06-03 22:10:13 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://dalian.baixing.com/ershoufang/a1336625081.html> (referer: http://dalian.baixing.com/ershoufang/?afo=mWf)
+2018-06-03 22:10:13 [scrapy.log] INFO: b'Mozilla/5.0 (Windows; U; Windows NT 5.1; zh-CN; rv:1.9) Gecko/20080705 Firefox/3.0 Kapiko/3.0'
+2018-06-03 22:10:14 [scrapy.core.scraper] DEBUG: Scraped from <200 http://dalian.baixing.com/ershoufang/a1336625081.html>
+{'raw': <200 http://dalian.baixing.com/ershoufang/a1336625081.html>}
+2018-06-03 22:10:16 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://dalian.baixing.com/ershoufang/a1284071787.html> (referer: http://dalian.baixing.com/ershoufang/?afo=mWf)
+2018-06-03 22:10:16 [scrapy.log] INFO: b'Mozilla/5.0 (Windows; U; Windows NT 5.1; zh-CN; rv:1.9) Gecko/20080705 Firefox/3.0 Kapiko/3.0'
+2018-06-03 22:10:16 [scrapy.core.scraper] DEBUG: Scraped from <200 http://dalian.baixing.com/ershoufang/a1284071787.html>
+{'raw': <200 http://dalian.baixing.com/ershoufang/a1284071787.html>}
+2018-06-03 22:10:18 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://dalian.baixing.com/ershoufang/a1364963978.html?from=vip> (referer: http://dalian.baixing.com/ershoufang/?page=2)
+2018-06-03 22:10:18 [scrapy.log] INFO: b'Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; Win64; x64; Trident/5.0; .NET CLR 3.5.30729; .NET CLR 3.0.30729; .NET CLR 2.0.50727; Media Center PC 6.0)'
+2018-06-03 22:10:19 [scrapy.core.scraper] DEBUG: Scraped from <200 http://dalian.baixing.com/ershoufang/a1364963978.html?from=vip>
+{'raw': <200 http://dalian.baixing.com/ershoufang/a1364963978.html?from=vip>}
+2018-06-03 22:10:21 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://dalian.baixing.com/ershoufang/a1367350526.html?from=vip> (referer: http://dalian.baixing.com/ershoufang/?page=2)
+2018-06-03 22:10:21 [scrapy.log] INFO: b'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; AcooBrowser; .NET CLR 1.1.4322; .NET CLR 2.0.50727)'
+2018-06-03 22:10:21 [scrapy.core.scraper] DEBUG: Scraped from <200 http://dalian.baixing.com/ershoufang/a1367350526.html?from=vip>
+{'raw': <200 http://dalian.baixing.com/ershoufang/a1367350526.html?from=vip>}
+2018-06-03 22:10:23 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://dalian.baixing.com/ershoufang/a1367715154.html?from=vip> (referer: http://dalian.baixing.com/ershoufang/?page=2)
+2018-06-03 22:10:23 [scrapy.log] INFO: b'Mozilla/5.0 (compatible; MSIE 8.0; Windows NT 6.0; Trident/4.0; WOW64; Trident/4.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; .NET CLR 1.0.3705; .NET CLR 1.1.4322)'
+2018-06-03 22:10:23 [scrapy.core.scraper] DEBUG: Scraped from <200 http://dalian.baixing.com/ershoufang/a1367715154.html?from=vip>
+{'raw': <200 http://dalian.baixing.com/ershoufang/a1367715154.html?from=vip>}
+2018-06-03 22:10:26 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://dalian.baixing.com/ershoufang/a1368226726.html?from=vip> (referer: http://dalian.baixing.com/ershoufang/?page=2)
+2018-06-03 22:10:26 [scrapy.log] INFO: b'Mozilla/5.0 (Windows; U; MSIE 9.0; Windows NT 9.0; en-US)'
+2018-06-03 22:10:26 [scrapy.core.scraper] DEBUG: Scraped from <200 http://dalian.baixing.com/ershoufang/a1368226726.html?from=vip>
+{'raw': <200 http://dalian.baixing.com/ershoufang/a1368226726.html?from=vip>}
+2018-06-03 22:10:27 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://dalian.baixing.com/ershoufang/a1368608636.html?from=vip> (referer: http://dalian.baixing.com/ershoufang/?page=2)
+2018-06-03 22:10:27 [scrapy.log] INFO: b'Mozilla/5.0 (compatible; MSIE 8.0; Windows NT 6.0; Trident/4.0; WOW64; Trident/4.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; .NET CLR 1.0.3705; .NET CLR 1.1.4322)'
+2018-06-03 22:10:27 [scrapy.core.scraper] DEBUG: Scraped from <200 http://dalian.baixing.com/ershoufang/a1368608636.html?from=vip>
+{'raw': <200 http://dalian.baixing.com/ershoufang/a1368608636.html?from=vip>}
+2018-06-03 22:10:30 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://dalian.baixing.com/ershoufang/a1378718959.html?from=vip> (referer: http://dalian.baixing.com/ershoufang/?page=2)
+2018-06-03 22:10:30 [scrapy.log] INFO: b'Mozilla/5.0 (Windows; U; Windows NT 5.1; zh-CN; rv:1.9) Gecko/20080705 Firefox/3.0 Kapiko/3.0'
+2018-06-03 22:10:31 [scrapy.core.scraper] DEBUG: Scraped from <200 http://dalian.baixing.com/ershoufang/a1378718959.html?from=vip>
+{'raw': <200 http://dalian.baixing.com/ershoufang/a1378718959.html?from=vip>}
+2018-06-03 22:10:31 [scrapy.extensions.logstats] INFO: Crawled 24 pages (at 24 pages/min), scraped 22 items (at 22 items/min)
+2018-06-03 22:10:33 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://dalian.baixing.com/ershoufang/a1379547880.html?from=vip> (referer: http://dalian.baixing.com/ershoufang/?page=2)
+2018-06-03 22:10:33 [scrapy.log] INFO: b'Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; Win64; x64; Trident/5.0; .NET CLR 3.5.30729; .NET CLR 3.0.30729; .NET CLR 2.0.50727; Media Center PC 6.0)'
+2018-06-03 22:10:33 [scrapy.core.scraper] DEBUG: Scraped from <200 http://dalian.baixing.com/ershoufang/a1379547880.html?from=vip>
+{'raw': <200 http://dalian.baixing.com/ershoufang/a1379547880.html?from=vip>}
+2018-06-03 22:10:35 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://dalian.baixing.com/ershoufang/a1379580638.html?from=vip> (referer: http://dalian.baixing.com/ershoufang/?page=2)
+2018-06-03 22:10:35 [scrapy.log] INFO: b'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/535.11 (KHTML, like Gecko) Chrome/17.0.963.56 Safari/535.11'
+2018-06-03 22:10:35 [scrapy.core.scraper] DEBUG: Scraped from <200 http://dalian.baixing.com/ershoufang/a1379580638.html?from=vip>
+{'raw': <200 http://dalian.baixing.com/ershoufang/a1379580638.html?from=vip>}
+2018-06-03 22:10:38 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://dalian.baixing.com/ershoufang/a1379554393.html?from=vip> (referer: http://dalian.baixing.com/ershoufang/?page=2)
+2018-06-03 22:10:38 [scrapy.log] INFO: b'Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; Win64; x64; Trident/5.0; .NET CLR 3.5.30729; .NET CLR 3.0.30729; .NET CLR 2.0.50727; Media Center PC 6.0)'
+2018-06-03 22:10:38 [scrapy.core.scraper] DEBUG: Scraped from <200 http://dalian.baixing.com/ershoufang/a1379554393.html?from=vip>
+{'raw': <200 http://dalian.baixing.com/ershoufang/a1379554393.html?from=vip>}
+2018-06-03 22:10:41 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://dalian.baixing.com/ershoufang/a1379557727.html?from=vip> (referer: http://dalian.baixing.com/ershoufang/?page=2)
+2018-06-03 22:10:41 [scrapy.log] INFO: b'Mozilla/5.0 (X11; U; Linux; en-US) AppleWebKit/527+ (KHTML, like Gecko, Safari/419.3) Arora/0.6'
+2018-06-03 22:10:41 [scrapy.core.scraper] DEBUG: Scraped from <200 http://dalian.baixing.com/ershoufang/a1379557727.html?from=vip>
+{'raw': <200 http://dalian.baixing.com/ershoufang/a1379557727.html?from=vip>}
+2018-06-03 22:10:43 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://dalian.baixing.com/ershoufang/a1411987110.html?from=vip> (referer: http://dalian.baixing.com/ershoufang/?page=2)
+2018-06-03 22:10:43 [scrapy.log] INFO: b'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_3) AppleWebKit/535.20 (KHTML, like Gecko) Chrome/19.0.1036.7 Safari/535.20'
+2018-06-03 22:10:43 [scrapy.core.scraper] DEBUG: Scraped from <200 http://dalian.baixing.com/ershoufang/a1411987110.html?from=vip>
+{'raw': <200 http://dalian.baixing.com/ershoufang/a1411987110.html?from=vip>}
+2018-06-03 22:10:45 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://dalian.baixing.com/ershoufang/a1411999024.html?from=vip> (referer: http://dalian.baixing.com/ershoufang/?page=2)
+2018-06-03 22:10:45 [scrapy.log] INFO: b'Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.8.1.2pre) Gecko/20070215 K-Ninja/2.1.1'
+2018-06-03 22:10:45 [scrapy.core.scraper] DEBUG: Scraped from <200 http://dalian.baixing.com/ershoufang/a1411999024.html?from=vip>
+{'raw': <200 http://dalian.baixing.com/ershoufang/a1411999024.html?from=vip>}
+2018-06-03 22:10:48 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://dalian.baixing.com/ershoufang/a1412160129.html?from=vip> (referer: http://dalian.baixing.com/ershoufang/?page=2)
+2018-06-03 22:10:48 [scrapy.log] INFO: b'Mozilla/4.0 (compatible; MSIE 7.0; AOL 9.5; AOLBuild 4337.35; Windows NT 5.1; .NET CLR 1.1.4322; .NET CLR 2.0.50727)'
+2018-06-03 22:10:48 [scrapy.core.scraper] DEBUG: Scraped from <200 http://dalian.baixing.com/ershoufang/a1412160129.html?from=vip>
+{'raw': <200 http://dalian.baixing.com/ershoufang/a1412160129.html?from=vip>}
+2018-06-03 22:10:49 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://dalian.baixing.com/ershoufang/a1391752768.html?from=vip> (referer: http://dalian.baixing.com/ershoufang/?page=2)
+2018-06-03 22:10:49 [scrapy.log] INFO: b'Mozilla/4.0 (compatible; MSIE 7.0b; Windows NT 5.2; .NET CLR 1.1.4322; .NET CLR 2.0.50727; InfoPath.2; .NET CLR 3.0.04506.30)'
+2018-06-03 22:10:50 [scrapy.core.scraper] DEBUG: Scraped from <200 http://dalian.baixing.com/ershoufang/a1391752768.html?from=vip>
+{'raw': <200 http://dalian.baixing.com/ershoufang/a1391752768.html?from=vip>}
+2018-06-03 22:10:52 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://dalian.baixing.com/ershoufang/a1395996822.html?from=vip> (referer: http://dalian.baixing.com/ershoufang/?page=2)
+2018-06-03 22:10:52 [scrapy.log] INFO: b'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.0; Acoo Browser; SLCC1; .NET CLR 2.0.50727; Media Center PC 5.0; .NET CLR 3.0.04506)'
+2018-06-03 22:10:53 [scrapy.core.scraper] DEBUG: Scraped from <200 http://dalian.baixing.com/ershoufang/a1395996822.html?from=vip>
+{'raw': <200 http://dalian.baixing.com/ershoufang/a1395996822.html?from=vip>}
+2018-06-03 22:10:54 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://dalian.baixing.com/ershoufang/a1399232721.html?from=vip> (referer: http://dalian.baixing.com/ershoufang/?page=2)
+2018-06-03 22:10:54 [scrapy.log] INFO: b'Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.9.0.8) Gecko Fedora/1.9.0.8-1.fc10 Kazehakase/0.5.6'
+2018-06-03 22:10:54 [scrapy.core.scraper] DEBUG: Scraped from <200 http://dalian.baixing.com/ershoufang/a1399232721.html?from=vip>
+{'raw': <200 http://dalian.baixing.com/ershoufang/a1399232721.html?from=vip>}
+2018-06-03 22:10:56 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://dalian.baixing.com/ershoufang/a1405783717.html?from=vip> (referer: http://dalian.baixing.com/ershoufang/?page=2)
+2018-06-03 22:10:56 [scrapy.log] INFO: b'Mozilla/5.0 (Windows; U; Windows NT 5.1; zh-CN; rv:1.9) Gecko/20080705 Firefox/3.0 Kapiko/3.0'
+2018-06-03 22:10:56 [scrapy.core.scraper] DEBUG: Scraped from <200 http://dalian.baixing.com/ershoufang/a1405783717.html?from=vip>
+{'raw': <200 http://dalian.baixing.com/ershoufang/a1405783717.html?from=vip>}
+2018-06-03 22:10:59 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://dalian.baixing.com/ershoufang/a1334496240.html?from=vip> (referer: http://dalian.baixing.com/ershoufang/?page=2)
+2018-06-03 22:10:59 [scrapy.log] INFO: b'Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.9.0.8) Gecko Fedora/1.9.0.8-1.fc10 Kazehakase/0.5.6'
+2018-06-03 22:10:59 [scrapy.core.scraper] DEBUG: Scraped from <200 http://dalian.baixing.com/ershoufang/a1334496240.html?from=vip>
+{'raw': <200 http://dalian.baixing.com/ershoufang/a1334496240.html?from=vip>}
+2018-06-03 22:11:01 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://dalian.baixing.com/ershoufang/a1388272408.html?from=vip> (referer: http://dalian.baixing.com/ershoufang/?page=2)
+2018-06-03 22:11:01 [scrapy.log] INFO: b'Mozilla/5.0 (Windows; U; Windows NT 5.1; zh-CN) AppleWebKit/523.15 (KHTML, like Gecko, Safari/419.3) Arora/0.3 (Change: 287 c9dfb30)'
+2018-06-03 22:11:02 [scrapy.core.scraper] DEBUG: Scraped from <200 http://dalian.baixing.com/ershoufang/a1388272408.html?from=vip>
+{'raw': <200 http://dalian.baixing.com/ershoufang/a1388272408.html?from=vip>}
+2018-06-03 22:11:03 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://dalian.baixing.com/ershoufang/a1382203632.html?from=vip> (referer: http://dalian.baixing.com/ershoufang/?page=2)
+2018-06-03 22:11:03 [scrapy.log] INFO: b'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.0; Acoo Browser; SLCC1; .NET CLR 2.0.50727; Media Center PC 5.0; .NET CLR 3.0.04506)'
+2018-06-03 22:11:03 [scrapy.core.scraper] DEBUG: Scraped from <200 http://dalian.baixing.com/ershoufang/a1382203632.html?from=vip>
+{'raw': <200 http://dalian.baixing.com/ershoufang/a1382203632.html?from=vip>}
+2018-06-03 22:11:06 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://dalian.baixing.com/ershoufang/a1399244326.html?from=vip> (referer: http://dalian.baixing.com/ershoufang/?page=2)
+2018-06-03 22:11:06 [scrapy.log] INFO: b'Opera/9.80 (Macintosh; Intel Mac OS X 10.6.8; U; fr) Presto/2.9.168 Version/11.52'
+2018-06-03 22:11:06 [scrapy.core.scraper] DEBUG: Scraped from <200 http://dalian.baixing.com/ershoufang/a1399244326.html?from=vip>
+{'raw': <200 http://dalian.baixing.com/ershoufang/a1399244326.html?from=vip>}
+2018-06-03 22:11:08 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://dalian.baixing.com/ershoufang/a1348755139.html?from=vip> (referer: http://dalian.baixing.com/ershoufang/?page=2)
+2018-06-03 22:11:08 [scrapy.log] INFO: b'Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.9.0.8) Gecko Fedora/1.9.0.8-1.fc10 Kazehakase/0.5.6'
+2018-06-03 22:11:08 [scrapy.core.scraper] DEBUG: Scraped from <200 http://dalian.baixing.com/ershoufang/a1348755139.html?from=vip>
+{'raw': <200 http://dalian.baixing.com/ershoufang/a1348755139.html?from=vip>}
+2018-06-03 22:11:10 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://dalian.baixing.com/ershoufang/a1384940941.html?from=vip> (referer: http://dalian.baixing.com/ershoufang/?page=2)
+2018-06-03 22:11:10 [scrapy.log] INFO: b'Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; Win64; x64; Trident/5.0; .NET CLR 3.5.30729; .NET CLR 3.0.30729; .NET CLR 2.0.50727; Media Center PC 6.0)'
+2018-06-03 22:11:10 [scrapy.core.scraper] DEBUG: Scraped from <200 http://dalian.baixing.com/ershoufang/a1384940941.html?from=vip>
+{'raw': <200 http://dalian.baixing.com/ershoufang/a1384940941.html?from=vip>}
+2018-06-03 22:11:13 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://dalian.baixing.com/ershoufang/a1399254786.html?from=vip> (referer: http://dalian.baixing.com/ershoufang/?page=2)
+2018-06-03 22:11:13 [scrapy.log] INFO: b'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; AcooBrowser; .NET CLR 1.1.4322; .NET CLR 2.0.50727)'
+2018-06-03 22:11:13 [scrapy.core.scraper] DEBUG: Scraped from <200 http://dalian.baixing.com/ershoufang/a1399254786.html?from=vip>
+{'raw': <200 http://dalian.baixing.com/ershoufang/a1399254786.html?from=vip>}
+2018-06-03 22:11:15 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://dalian.baixing.com/ershoufang/a1324515242.html?from=vip> (referer: http://dalian.baixing.com/ershoufang/?page=2)
+2018-06-03 22:11:15 [scrapy.log] INFO: b'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_3) AppleWebKit/535.20 (KHTML, like Gecko) Chrome/19.0.1036.7 Safari/535.20'
+2018-06-03 22:11:15 [scrapy.core.scraper] DEBUG: Scraped from <200 http://dalian.baixing.com/ershoufang/a1324515242.html?from=vip>
+{'raw': <200 http://dalian.baixing.com/ershoufang/a1324515242.html?from=vip>}
+2018-06-03 22:11:18 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://dalian.baixing.com/ershoufang/a1385791337.html?from=vip> (referer: http://dalian.baixing.com/ershoufang/?page=2)
+2018-06-03 22:11:18 [scrapy.log] INFO: b'Mozilla/5.0 (Windows; U; Windows NT 5.1; zh-CN; rv:1.9) Gecko/20080705 Firefox/3.0 Kapiko/3.0'
+2018-06-03 22:11:18 [scrapy.core.scraper] DEBUG: Scraped from <200 http://dalian.baixing.com/ershoufang/a1385791337.html?from=vip>
+{'raw': <200 http://dalian.baixing.com/ershoufang/a1385791337.html?from=vip>}
+2018-06-03 22:11:21 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://dalian.baixing.com/ershoufang/a1382209117.html?from=vip> (referer: http://dalian.baixing.com/ershoufang/?page=2)
+2018-06-03 22:11:21 [scrapy.log] INFO: b'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/535.11 (KHTML, like Gecko) Chrome/17.0.963.56 Safari/535.11'
+2018-06-03 22:11:21 [scrapy.core.scraper] DEBUG: Scraped from <200 http://dalian.baixing.com/ershoufang/a1382209117.html?from=vip>
+{'raw': <200 http://dalian.baixing.com/ershoufang/a1382209117.html?from=vip>}
