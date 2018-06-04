@@ -8,7 +8,7 @@ import re
 from bs4 import BeautifulSoup
 
 
-class ershoufang_bxPipeline(object):
+class ershoufang_gjPipeline(object):
     def process_item(self, item, spider):
         reponse = item.get('raw')
         html = reponse.text
@@ -16,7 +16,7 @@ class ershoufang_bxPipeline(object):
         soup =BeautifulSoup(html)
         print(soup.find('h1'))
         souce_code = re.findall(r'\d+', url)[0]
-        with open('/home/wang/bx_ershoufang/%s.html' % souce_code, 'w+') as ff:
+        with open('/home/wang/gj_ershoufang/%s.html' % souce_code, 'w+') as ff:
             ff.write(html)
 
         return item

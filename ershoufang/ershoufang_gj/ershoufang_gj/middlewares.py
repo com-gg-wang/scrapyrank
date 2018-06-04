@@ -4,12 +4,12 @@ import re
 import redis
 from scrapy import log
 
-from ershoufang_58.agents import AGENTS
-from ershoufang_58.proxy import PROXIES
+from ershoufang_gj.agents import AGENTS
+from ershoufang_gj.proxy import PROXIES
 
 
 class CustomUserAgentMiddleware(object):
-    rediskey = '58_detail_page_key'
+    rediskey = 'bx_detail_page_key'
     rediscli = None
 
     def __init__(self):
@@ -20,7 +20,8 @@ class CustomUserAgentMiddleware(object):
         request.headers['User-Agent'] = agent
         log.logger.info(request.headers['User-Agent'])
         req_url = request.url
-        filler = re.search(r'http://dl.58.com/ershoufang/\w+\.shtml.*', req_url)
+        # http://dalian.baixing.com/ershoufang/a1396863116.html?from=regular
+        filler = re.search(r'^http://dalian.baixing.com/ershoufang/\w+.html', req_url)
         if filler:
             statuflag = self.dedupbyredis(req_url)
             if statuflag != 0:
@@ -32,7 +33,7 @@ class CustomUserAgentMiddleware(object):
     def dedupbyredis(self, url):
         # 默认没有值
         statuflag = 0
-        filler = re.search(r'http://dl.58.com/ershoufang/\w+\.shtml.*', url)
+        filler = re.search(r'^http://dalian.baixing.com/ershoufang/\w+.html', url)
         if filler:
             print('我要的' + filler.group(0))
             detailpageurl = filler.group(0)

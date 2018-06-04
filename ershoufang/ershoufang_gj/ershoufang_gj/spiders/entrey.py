@@ -11,11 +11,11 @@ from scrapy.spiders import CrawlSpider, Rule
 
 class EntreySpider(CrawlSpider):
     name = 'entrey'
-    # allowed_domains = ['ershoufang_bx.com']
-    start_urls = ['http://dalian.baixing.com/ershoufang/']
+    # allowed_domains = ['ershoufang_gj.com']
+    start_urls = ['http://dl.ganji.com/fang5/']
 
     rules = (
-        Rule(LinkExtractor(allow=r'http://dalian.baixing.com/ershoufang/.*',
+        Rule(LinkExtractor(allow=r'http://dl.ganji.com/fang5/\w+/',
                            restrict_xpaths=r'//div[@class="area links"]/a')),
         Rule(LinkExtractor(allow=r'http://dalian.baixing.com/ershoufang/\w+',
                            restrict_xpaths=r'//div[@class="subarea links"]/a')),
@@ -33,8 +33,6 @@ class EntreySpider(CrawlSpider):
         # i['description'] = response.xpath('//div[@id="description"]').extract()
         yield i
 
-
 if __name__ == '__main__':
-    ma = re.search(r'^http://dalian.baixing.com/ershoufang/\w+.html.*',
-                   'http://dalian.baixing.com/ershoufang/a1399275053.html?from=regular')
+    ma =re.search(r'^http://dalian.baixing.com/ershoufang/\w+.html.*','http://dalian.baixing.com/ershoufang/a1399275053.html?from=regular')
     print(ma.group(0))

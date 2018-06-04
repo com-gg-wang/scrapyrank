@@ -4,7 +4,7 @@ import re
 import redis
 from scrapy import log
 
-from ershoufang_bx.agents import AGENTS
+from ershoufang_bx.agents import AGENTS, AGENTS_ALL
 from ershoufang_bx.proxy import PROXIES
 
 
@@ -18,7 +18,9 @@ class CustomUserAgentMiddleware(object):
     def process_request(self, request, spider):
         agent = random.choice(AGENTS)
         request.headers['User-Agent'] = agent
+
         log.logger.info(request.headers['User-Agent'])
+
         req_url = request.url
         # http://dalian.baixing.com/ershoufang/a1396863116.html?from=regular
         filler = re.search(r'^http://dalian.baixing.com/ershoufang/\w+.html', req_url)
