@@ -14,8 +14,8 @@ class ershoufang_gjPipeline(object):
         html = reponse.text
         url = reponse.url
         soup =BeautifulSoup(html)
-        print(soup.find('h1'))
-        souce_code = re.findall(r'\d+', url)[0]
+        print(soup.find('p',{'class':"card-title"}))
+        souce_code = re.findall(r'/\d+x', url)[0]
         with open('/home/wang/gj_ershoufang/%s.html' % souce_code, 'w+') as ff:
             ff.write(html)
 

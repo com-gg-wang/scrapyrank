@@ -18,9 +18,22 @@ class CustomUserAgentMiddleware(object):
     def process_request(self, request, spider):
         agent = random.choice(AGENTS)
         request.headers['User-Agent'] = agent
+        request.headers['Host'] = 'dalian.baixing.com'
 
         log.logger.info(request.headers['User-Agent'])
-
+        request.cookies = {
+            '__admx_track_id': 'L9jCsT2C85ZwGNtx1eE9IQ',
+            '__admx_track_id.sig': 'pvSyLQCDCvnh-Lzcx4LXogrtA7Y',
+            '__trackId': '152808293377183',
+            '__city': 'dalian',
+            '_ga': 'GA1.2.1305236063.1528082935',
+            '_gid': 'GA1.2.1824866696.1528082935',
+            '__s': '37ph9vf2viivnl8bh87mfj69l0',
+            '_auth_redirect': 'http%3A%2F%2Fdalian.baixing.com%2Fershoufang%2F',
+            'Hm_lvt_5a727f1b4acc5725516637e03b07d3d2': '1528082935,1528086030,1528095509,1528095911',
+            '__sense_session_pv': '12',
+            'Hm_lpvt_5a727f1b4acc5725516637e03b07d3d2': '1528097607',
+        }
         req_url = request.url
         # http://dalian.baixing.com/ershoufang/a1396863116.html?from=regular
         filler = re.search(r'^http://dalian.baixing.com/ershoufang/\w+.html', req_url)

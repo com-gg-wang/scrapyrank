@@ -17,7 +17,7 @@ class EntreySpider(CrawlSpider):
     rules = (
         Rule(LinkExtractor(allow=r'http://dalian.baixing.com/ershoufang/.*',
                            restrict_xpaths=r'//div[@class="area links"]/a')),
-        Rule(LinkExtractor(allow=r'http://dalian.baixing.com/ershoufang/\w+',
+        Rule(LinkExtractor(allow=r'http://dalian.baixing.com/ershoufang/.*',
                            restrict_xpaths=r'//div[@class="subarea links"]/a')),
         Rule(LinkExtractor(allow=r'.*/?page=(\d+)', restrict_xpaths=r'//a[text()="下一页"]'),
              follow=True),
