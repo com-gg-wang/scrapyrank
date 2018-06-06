@@ -8,7 +8,7 @@ import sys
 
 path = dirname(dirname(os.path.abspath(os.path.dirname(__file__))))
 sys.path.append(path)
-# Scrapy settings for ershoufang_58 project
+# Scrapy settings for ershoufang_ajk project
 #
 # For simplicity, this file contains only settings considered important or
 # commonly used. You can find more settings consulting the documentation:
@@ -17,17 +17,19 @@ sys.path.append(path)
 #     https://doc.scrapy.org/en/latest/topics/downloader-middleware.html
 #     https://doc.scrapy.org/en/latest/topics/spider-middleware.html
 
-BOT_NAME = 'ershoufang_58'
+BOT_NAME = 'ershoufang_ajk'
 
-SPIDER_MODULES = ['ershoufang_58.spiders']
-NEWSPIDER_MODULE = 'ershoufang_58.spiders'
+SPIDER_MODULES = ['ershoufang_ajk.anjuke.spiders']
+NEWSPIDER_MODULE = 'ershoufang_ajk.anjuke.spiders'
 
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
-#USER_AGENT = 'ershoufang_58 (+http://www.yourdomain.com)'
+#USER_AGENT = 'ershoufang_ajk (+http://www.yourdomain.com)'
 
 # Obey robots.txt rules
 ROBOTSTXT_OBEY = False
+
+LOG_FILE='anjukelog.txt'
 
 # Configure maximum concurrent requests performed by Scrapy (default: 16)
 #CONCURRENT_REQUESTS = 32
@@ -56,13 +58,13 @@ DOWNLOAD_DELAY = 5
 # Enable or disable spider middlewares
 # See https://doc.scrapy.org/en/latest/topics/spider-middleware.html
 #SPIDER_MIDDLEWARES = {
-#    'ershoufang_58.middlewares.AnjukeSpiderMiddleware': 543,
+#    'ershoufang_ajk.middlewares.AnjukeSpiderMiddleware': 543,
 #}
 
 # Enable or disable downloader middlewares
 # See https://doc.scrapy.org/en/latest/topics/downloader-middleware.html
 DOWNLOADER_MIDDLEWARES = {
-   'ershoufang_58.middlewares.CustomUserAgentMiddleware': 543,
+   'ershoufang_ajk.anjuke.middlewares.CustomUserAgentMiddleware': 543,
 }
 
 # Enable or disable extensions
@@ -74,7 +76,7 @@ DOWNLOADER_MIDDLEWARES = {
 # Configure item pipelines
 # See https://doc.scrapy.org/en/latest/topics/item-pipeline.html
 ITEM_PIPELINES = {
-   'ershoufang_58.pipelines.AnjukePipeline': 300,
+   'ershoufang_ajk.anjuke.pipelines.AnjukePipeline': 300,
 }
 
 # Enable and configure the AutoThrottle extension (disabled by default)

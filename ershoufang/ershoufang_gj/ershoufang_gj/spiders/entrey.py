@@ -35,6 +35,5 @@ class EntreySpider(CrawlSpider):
 
 
 if __name__ == '__main__':
-    ma = re.search(r'^http://dalian.baixing.com/ershoufang/\w+.html.*',
-                   'http://dalian.baixing.com/ershoufang/a1399275053.html?from=regular')
+    ma = re.search('http://dl.ganji.com/\w+/\d+x.htm', 'http://dl.ganji.com/fang5/3293904744x.htm')
     print(ma.group(0))
