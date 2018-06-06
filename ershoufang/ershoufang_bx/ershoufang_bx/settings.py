@@ -41,7 +41,7 @@ DOWNLOAD_DELAY = 6
 #CONCURRENT_REQUESTS_PER_IP = 16
 LOG_FILE="log.txt"
 # Disable cookies (enabled by default)
-#COOKIES_ENABLED = False
+# COOKIES_ENABLED = False
 
 # Disable Telnet Console (enabled by default)
 #TELNETCONSOLE_ENABLED = False

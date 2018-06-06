@@ -12,9 +12,10 @@ from scrapy.spiders import CrawlSpider, Rule
 class EntreySpider(CrawlSpider):
     name = 'entrey'
     # allowed_domains = ['ershoufang_bx.com']
-    start_urls = ['http://dalian.baixing.com/ershoufang/']
+    start_urls = ['http://dalian.baixing.com']
 
     rules = (
+        Rule(LinkExtractor(allow=r'http://dalian.baixing.com/ershoufang/.*', restrict_xpaths='//p[@class="sub-title"]/a')),
         Rule(LinkExtractor(allow=r'http://dalian.baixing.com/ershoufang/.*',
                            restrict_xpaths=r'//div[@class="area links"]/a')),
         Rule(LinkExtractor(allow=r'http://dalian.baixing.com/ershoufang/.*',
