@@ -2,7 +2,6 @@ import random
 import re
 
 import redis
-from requests import Response
 from scrapy import log
 from scrapy.http import HtmlResponse
 
@@ -25,6 +24,7 @@ class CustomUserAgentMiddleware(object):
         log.logger.info(request.headers['User-Agent'])
 
         request.cookies = random.choice(COOKIES)
+        print(request.cookies)
         req_url = request.url
         # http://dalian.baixing.com/ershoufang/a1396863116.html?from=regular
         filler = re.search(r'^http://dalian.baixing.com/ershoufang/\w+.html', req_url)

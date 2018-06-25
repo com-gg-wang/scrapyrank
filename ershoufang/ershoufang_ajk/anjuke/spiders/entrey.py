@@ -12,7 +12,7 @@ from scrapy.spiders import CrawlSpider, Rule
 class EntreySpider(CrawlSpider):
     name = 'entrey'
     # allowed_domains = ['ershoufang_58.com']
-    start_urls = ['https://dalian.anjuke.com/sale/']
+    start_urls = ['https://dalian.anjuke.com/sale/', 'https://beijing.anjuke.com/sale/']
 
     rules = (
         Rule(LinkExtractor(allow=r'^[https://].*', restrict_xpaths=r'//div[@class="items"]//span[@class="elems-l"]/a')),
@@ -20,13 +20,9 @@ class EntreySpider(CrawlSpider):
         Rule(LinkExtractor(allow=r'^[https://].*', restrict_xpaths=r'//a[@class="aNxt"]'), follow=True),
         Rule(LinkExtractor(allow=r'^[https://].*', restrict_xpaths=r'//div[@class="house-title"]/a'),
              callback='parse_item')
-
     )
 
     def parse_item(self, response):
-
-
-
         i = {}
         i['raw'] = response
         # i['domain_id'] = response.xpath('//input[@id="sid"]/@value').extract()

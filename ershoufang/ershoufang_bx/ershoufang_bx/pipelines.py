@@ -28,7 +28,7 @@ class ershoufang_bxPipeline(object):
             print('错误')
         print(soup.find('h1'))
         souce_code = re.findall(r'\d+', url)[0]
-        with open('/home/wang/bx_ershoufang/%s.html' % souce_code, 'w+') as ff:
+        with open('/Users/wang/Documents/bx_ershoufang/%s.html' % souce_code, 'w+') as ff:
             ff.write(html)
 
         return item
