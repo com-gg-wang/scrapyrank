@@ -56,7 +56,7 @@ LOG_FILE="log.txt"
 # Enable or disable spider middlewares
 # See https://doc.scrapy.org/en/latest/topics/spider-middleware.html
 #SPIDER_MIDDLEWARES = {
-#    'job_51.middlewares.ershoufang_gjSpiderMiddleware': 543,
+#    'job_51.middlewares.qichachaSpiderMiddleware': 543,
 #}
 
 # Enable or disable downloader middlewares
@@ -74,7 +74,7 @@ DOWNLOADER_MIDDLEWARES = {
 # Configure item pipelines
 # See https://doc.scrapy.org/en/latest/topics/item-pipeline.html
 ITEM_PIPELINES = {
-   'job_51.pipelines.ershoufang_gjPipeline': 300,
+   'job_51.pipelines.qichachaPipeline': 300,
 }
 
 # Enable and configure the AutoThrottle extension (disabled by default)

@@ -12,17 +12,12 @@ from scrapy.spiders import CrawlSpider, Rule
 class EntreySpider(CrawlSpider):
     name = 'entrey'
     # allowed_domains = ['job_51.com']
-    start_urls = ['http://dl.ganji.com/fang5/']
+    start_urls = ['https://www.job_51.com/']
 
     rules = (
-        Rule(LinkExtractor(allow=r'http://dl.ganji.com/fang5/\w+/',
-                           restrict_xpaths=r'//ul[@class="f-clear"]//a')),
-        Rule(LinkExtractor(allow=r'http://dl.ganji.com/\w+/\w+/',
-                           restrict_xpaths=r'//div[@class="fou-list f-clear"]/a')),
-        Rule(LinkExtractor(allow=r'.*o\d+/', restrict_xpaths=r'//a[@class="next"]'),
-             follow=True),
+
         Rule(LinkExtractor(allow=r'http://dl.ganji.com/\w+/\d+x.htm',
-                           restrict_xpaths=r'//div[@class="f-list-item ershoufang-list"]//dd[@class="dd-item title"]/a'), callback='parse_item')
+                           restrict_xpaths=r''), callback='parse_item')
     )
 
     def parse_item(self, response):

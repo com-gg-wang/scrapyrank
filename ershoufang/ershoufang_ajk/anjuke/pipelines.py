@@ -19,7 +19,9 @@ class AnjukePipeline(object):
         print(soup.find('h1'))
         print(soup.find('h3'))
         souce_code = re.findall(r'A\d+', url)[0]
-        with open('/home/wang/anjukeershoufang/%s.html' % souce_code, 'w+') as ff:
+        # with open('/home/wang/anjukeershoufang/%s.html' % souce_code, 'w+') as ff:
+        #     ff.write(html)
+        with open('/Users/wang/Documents/anjuke/%s.html' % souce_code, 'w+') as ff:
             ff.write(html)
 
         return item
