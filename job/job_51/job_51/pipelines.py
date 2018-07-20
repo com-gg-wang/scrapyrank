@@ -17,7 +17,7 @@ from bs4 import BeautifulSoup
 class job_51Pipeline(object):
 
     def __init__(self):
-        self.db = pymysql.connect(host='127.0.0.1', port=3306, user='root', passwd='Dream96*', db='spider',
+        self.db = pymysql.connect(host='192.168.1.214', port=4000, user='dbuser', passwd='dbuserDev123', db='spiderData',
                                   use_unicode='true', charset='utf8')
         pass
 
@@ -25,7 +25,7 @@ class job_51Pipeline(object):
         cursor = self.db.cursor()
 
         for a in dict(item).get('company_name'):
-            s = "INSERT INTO company (company_n) VALUES ('%s')" % a.strip()
+            s = "INSERT INTO company_name (company_name) VALUES ('%s')" % a.strip()
             print(s)
             cursor.execute(s)
             self.db.commit()

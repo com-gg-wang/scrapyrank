@@ -2,6 +2,7 @@
 import codecs
 import re
 
+import pymysql
 import redis
 import scrapy
 from scrapy import log
@@ -13,6 +14,9 @@ from scrapy.spiders import CrawlSpider, Rule
 class EntreySpider(CrawlSpider):
     name = 'entrey'
     # allowed_domains = ['job_51.com']
+
+
+
     start_urls = ['https://jobs.51job.com/all/']
 
     rules = (
@@ -42,5 +46,13 @@ class EntreySpider(CrawlSpider):
 
 
 if __name__ == '__main__':
-    ma = re.search('http://dl.ganji.com/\w+/\d+x.htm', 'http://dl.ganji.com/fang5/3293904744x.htm')
-    print(ma.group(0))
+    db = pymysql.connect(host='192.168.1.214', port=4000, user='dbuser', passwd='dbuserDev123', db='spiderData',
+                         use_unicode='true', charset='utf8')
+    cursor = db.cursor()
+    cursor.execute('select company_name from company_name')
+    fetchall = cursor.fetchall()
+
+    print(fetchall)
+
+    for s in fetchall:
+        ''
