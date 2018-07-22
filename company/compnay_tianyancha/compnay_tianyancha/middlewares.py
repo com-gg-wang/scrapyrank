@@ -69,7 +69,7 @@ class CompnayTianyanchaDownloaderMiddleware(object):
         return s
 
     def process_request(self, request, spider):
-        request.headers['User-Agent'] = 'Mozilla/5.0 (X11; Linux i686; U;) Gecko/20070322 Kazehakase/0.4.5'
+        request.headers['User-Agent'] = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36'
 
         # Called for each request that goes through the downloader
         # middleware.
